@@ -36,22 +36,30 @@ class CoinsCardSection extends StatelessWidget {
                 children: [
                   Text(
                     'Collect Coins',
-                    style: TextStyle(fontSize: 15.sp, fontWeight: FontWeight.bold, color: AppColors.blackColor),
+                    style: TextStyle(
+                        fontSize: 15.sp,
+                        fontWeight: FontWeight.bold,
+                        color: AppColors.blackColor),
                   ),
                   SizedBox(height: 4.h),
                   Text(
                     'Get up to 30% off',
-                    style: TextStyle(fontSize: 12.sp, color: AppColors.blackColor),
+                    style:
+                        TextStyle(fontSize: 12.sp, color: AppColors.blackColor),
                   ),
                   SizedBox(height: 8.h),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.redColor,
-                      padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 6.h),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.r)),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 12.w, vertical: 6.h),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8.r)),
                     ),
                     onPressed: () {},
-                    child: Text('Shop Now', style: TextStyle(fontSize: 12.sp, color: AppColors.whiteColor)),
+                    child: Text('Shop Now',
+                        style: TextStyle(
+                            fontSize: 12.sp, color: AppColors.whiteColor)),
                   ),
                 ],
               ),

@@ -165,14 +165,12 @@ class TagModel {
   });
 
   factory TagModel.fromJson(Map<String, dynamic> json) {
-    if (json is Map<String, dynamic>) {
-      return TagModel(
-        tagId: json['tag_id'] is int
-            ? json['tag_id']
-            : int.tryParse(json['tag_id'].toString()) ?? 0,
-        tagName: json['tag_name']?.toString() ?? '',
-      );
-    }
+    return TagModel(
+      tagId: json['tag_id'] is int
+          ? json['tag_id']
+          : int.tryParse(json['tag_id'].toString()) ?? 0,
+      tagName: json['tag_name']?.toString() ?? '',
+    );
     // Handle case where json might be a string
     return TagModel(
       tagId: 0,

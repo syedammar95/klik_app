@@ -16,7 +16,8 @@ class JazzCash01 extends StatelessWidget {
           style: TextStyle(fontSize: 16.sp, color: Colors.white),
         ),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white),
+          icon:
+              const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -34,7 +35,8 @@ class JazzCash01 extends StatelessWidget {
               child: Container(
                 color: Colors.blue.shade100,
                 child: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 6.h, horizontal: 12.w),
+                  padding:
+                      EdgeInsets.symmetric(vertical: 6.h, horizontal: 12.w),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -46,7 +48,8 @@ class JazzCash01 extends StatelessWidget {
                           'Please collect bank vouchers to avail bank discounts and mega deals/flash sales',
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
-                          style: TextStyle(fontSize: 11.sp, color: Colors.blue[900]),
+                          style: TextStyle(
+                              fontSize: 11.sp, color: Colors.blue[900]),
                         ),
                       ),
                     ],
@@ -63,11 +66,13 @@ class JazzCash01 extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(FontAwesomeIcons.ccVisa, size: 22.sp, color: AppColors.primaryColor),
+                      Icon(FontAwesomeIcons.ccVisa,
+                          size: 22.sp, color: AppColors.primaryColor),
                       SizedBox(width: 2.w),
                       Expanded(
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 18.w, vertical: 8.h),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 18.w, vertical: 8.h),
                           child: Text(
                             'Pay with your JazzCash Account. Please make sure you have enough balance in your account.',
                             style: TextStyle(fontSize: 11.sp),
@@ -93,16 +98,21 @@ class JazzCash01 extends StatelessWidget {
                     children: [
                       Icon(Icons.circle, size: 6.sp, color: Colors.grey),
                       SizedBox(width: 4.w),
-                      Text('FOR JAZZ/WARID', style: TextStyle(fontSize: 12.sp, color: Colors.grey)),
+                      Text('FOR JAZZ/WARID',
+                          style:
+                              TextStyle(fontSize: 12.sp, color: Colors.grey)),
                     ],
                   ),
                   Row(
                     children: [
-                      Icon(Icons.arrow_forward, size: 10.sp, color: Colors.grey),
+                      Icon(Icons.arrow_forward,
+                          size: 10.sp, color: Colors.grey),
                       SizedBox(width: 4.w),
                       Expanded(
                         child: Text(
-                          'Unlock your phone and you will receive a MPIN input Prompt', style: TextStyle(fontSize: 11.sp, color: Colors.grey)),
+                            'Unlock your phone and you will receive a MPIN input Prompt',
+                            style:
+                                TextStyle(fontSize: 11.sp, color: Colors.grey)),
                       ),
                     ],
                   ),
@@ -111,21 +121,28 @@ class JazzCash01 extends StatelessWidget {
                     children: [
                       Icon(Icons.circle, size: 6.sp, color: Colors.grey),
                       SizedBox(width: 4.w),
-                      Text('FOR OTHER NETWORKS', style: TextStyle(fontSize: 12.sp, color: Colors.grey)),
+                      Text('FOR OTHER NETWORKS',
+                          style:
+                              TextStyle(fontSize: 12.sp, color: Colors.grey)),
                     ],
                   ),
                   Row(
                     children: [
-                      Icon(Icons.arrow_forward, size: 10.sp, color: Colors.grey),
+                      Icon(Icons.arrow_forward,
+                          size: 10.sp, color: Colors.grey),
                       SizedBox(width: 4.w),
                       Expanded(
                         child: Text(
-                            'log-in to your JazzCash App and enter your MPIN', style: TextStyle(fontSize: 11.sp, color: Colors.grey)),
+                            'log-in to your JazzCash App and enter your MPIN',
+                            style:
+                                TextStyle(fontSize: 11.sp, color: Colors.grey)),
                       ),
                     ],
                   ),
                   SizedBox(height: 8.h),
-                  Text('Note: Ensure your JazzCash account is Active and has sufficient balance', style: TextStyle(fontSize: 12.sp, color: Colors.grey)),
+                  Text(
+                      'Note: Ensure your JazzCash account is Active and has sufficient balance',
+                      style: TextStyle(fontSize: 12.sp, color: Colors.grey)),
                 ],
               ),
             ),
@@ -144,15 +161,20 @@ class JazzCash01 extends StatelessWidget {
                           child: TextField(
                             decoration: InputDecoration(
                               hintText: 'JazzCash Account Number',
-                              hintStyle: TextStyle(color: Colors.grey, fontSize: 13.sp, fontWeight: FontWeight.normal),
+                              hintStyle: TextStyle(
+                                  color: Colors.grey,
+                                  fontSize: 13.sp,
+                                  fontWeight: FontWeight.normal),
                               border: InputBorder.none,
                               enabledBorder: const UnderlineInputBorder(
                                 borderSide: BorderSide(color: Colors.grey),
                               ),
-                              focusedBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(color: AppColors.primaryColor),
+                              focusedBorder: const UnderlineInputBorder(
+                                borderSide:
+                                    BorderSide(color: AppColors.primaryColor),
                               ),
-                              contentPadding: EdgeInsets.symmetric(vertical: 8.h, horizontal: 0.w),
+                              contentPadding: EdgeInsets.symmetric(
+                                  vertical: 8.h, horizontal: 0.w),
                             ),
                             style: TextStyle(fontSize: 14.sp),
                             maxLines: 1,
@@ -187,7 +209,9 @@ class JazzCash01 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text('Subtotal', style: TextStyle(fontSize: 12.sp)),
-                  Text('\$100', style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold)),
+                  Text('\$100',
+                      style: TextStyle(
+                          fontSize: 12.sp, fontWeight: FontWeight.bold)),
                 ],
               ),
               SizedBox(height: 12.h),
@@ -195,7 +219,11 @@ class JazzCash01 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text('Total Amount', style: TextStyle(fontSize: 13.sp)),
-                  Text('\$100', style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.bold, color: AppColors.primaryColor)),
+                  Text('\$100',
+                      style: TextStyle(
+                          fontSize: 13.sp,
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.primaryColor)),
                 ],
               ),
               SizedBox(height: 4.h),
@@ -215,7 +243,8 @@ class JazzCash01 extends StatelessWidget {
                   onPressed: () {},
                   child: Text(
                     'Pay Now',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13.sp),
+                    style:
+                        TextStyle(fontWeight: FontWeight.bold, fontSize: 13.sp),
                   ),
                 ),
               ),

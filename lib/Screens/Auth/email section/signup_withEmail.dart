@@ -117,7 +117,7 @@ class SignupWithEmailState extends State<SignupWithEmail> {
         height: 80.h,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10.r),
-          color: AppColors.primaryColor.withOpacity(0.10),
+          color: AppColors.primaryColor.withValues(alpha: 0.10),
         ),
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 14.w),

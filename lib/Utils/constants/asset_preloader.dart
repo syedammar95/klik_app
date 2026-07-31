@@ -1,6 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'svg_utils.dart';
 
 class AssetPreloader {
@@ -34,7 +33,7 @@ class AssetPreloader {
 
   static Future<void> preloadNetworkImage(String url) async {
     try {
-      await CachedNetworkImageProvider(url).resolve(ImageConfiguration());
+      CachedNetworkImageProvider(url).resolve(const ImageConfiguration());
       debugPrint('Network image preloaded successfully: $url');
     } catch (e) {
       debugPrint('Error preloading network image: $e');

@@ -7,5 +7,4 @@ class CategoryService {
   Future<Map<String, dynamic>?> getCategories() async {
     return _apiClient.get('/get_categories.php');
   }
-
 }

@@ -33,7 +33,7 @@ class CartItemsList extends StatelessWidget {
               SizedBox(height: 4.h),
             ],
           );
-        }).toList(),
+        }),
       ],
     );
   }

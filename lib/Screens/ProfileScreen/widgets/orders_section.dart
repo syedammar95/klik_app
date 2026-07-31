@@ -20,10 +20,14 @@ class OrdersSection extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('My Orders', style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.bold)),
+                Text('My Orders',
+                    style: TextStyle(
+                        fontSize: 13.sp, fontWeight: FontWeight.bold)),
                 TextButton(
                   onPressed: () {},
-                  child: Text('View All Orders', style: TextStyle(fontSize: 13.sp, color: AppColors.blackColor)),
+                  child: Text('View All Orders',
+                      style: TextStyle(
+                          fontSize: 13.sp, color: AppColors.blackColor)),
                 ),
               ],
             ),
@@ -42,7 +46,8 @@ class OrdersSection extends StatelessWidget {
         _orderOption('assets/svg_icons_profile/To ship icon 02.svg', 'To Ship'),
         _orderOption('assets/svg_icons_profile/Shipped.svg', 'Shipped'),
         _orderOption('assets/svg_icons_profile/To_Reviews.svg', 'To Review'),
-        _orderOption('assets/svg_icons_profile/Return & Cancellation.svg', 'Returns'),
+        _orderOption(
+            'assets/svg_icons_profile/Return & Cancellation.svg', 'Returns'),
       ],
     );
   }

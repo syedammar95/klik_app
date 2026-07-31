@@ -65,7 +65,8 @@ class OrdersPageItem extends StatelessWidget {
                   children: [
                     Text(
                       firstText,
-                      style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 13.sp, fontWeight: FontWeight.bold),
                     ),
                     if (isSecondTextVisible)
                       Text(
@@ -108,12 +109,15 @@ class OrdersPageItem extends StatelessWidget {
                               longText,
                               maxLines: 2,
                               overflow: TextOverflow.ellipsis,
-                              style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.normal),
+                              style: TextStyle(
+                                  fontSize: 13.sp,
+                                  fontWeight: FontWeight.normal),
                             ),
                             SizedBox(height: 4.h),
                             Text(
                               '#$orderId',
-                              style: TextStyle(fontSize: 11.sp, color: Colors.grey),
+                              style: TextStyle(
+                                  fontSize: 11.sp, color: Colors.grey),
                             ),
                           ],
                         ),

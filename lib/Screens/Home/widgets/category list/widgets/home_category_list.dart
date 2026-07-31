@@ -46,7 +46,7 @@ class HomeCategoryList extends StatelessWidget {
 
             /// **Category Name**
             SizedBox(height: 4.h), // ✅ Increased spacing between image and text
-            Container(
+            SizedBox(
               width: 70.w, // ✅ Fixed width for text container
               height: 28
                   .h, // ✅ Increased height to properly accommodate 2-line text

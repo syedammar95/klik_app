@@ -42,7 +42,8 @@ class HeaderSection extends StatelessWidget {
   }
 
   TextStyle _headerTextStyle() {
-    return TextStyle(fontSize: 22.sp, fontWeight: FontWeight.bold, color: Colors.white);
+    return TextStyle(
+        fontSize: 22.sp, fontWeight: FontWeight.bold, color: Colors.white);
   }
 
   TextStyle _subTextStyle() {
@@ -54,13 +55,15 @@ class HeaderSection extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         backgroundColor: AppColors.blackColor,
         foregroundColor: AppColors.whiteColor,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.r)),
+        shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.r)),
       ),
       onPressed: () => Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => const SignInWidget()),
       ),
-      child: Text('SignIn / Register', style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold)),
+      child: Text('SignIn / Register',
+          style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold)),
     );
   }
 }

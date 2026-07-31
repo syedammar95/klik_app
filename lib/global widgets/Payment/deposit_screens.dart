@@ -37,7 +37,8 @@ class CustomBottomSheet extends StatelessWidget {
               Center(
                 child: Text(
                   title,
-                  style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold),
+                  style:
+                      TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -80,14 +81,16 @@ class CustomBottomSheet extends StatelessWidget {
                 ),
                 Text(
                   amount,
-                  style: TextStyle(fontSize: 25.sp, color: AppColors.primaryColor, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      fontSize: 25.sp,
+                      color: AppColors.primaryColor,
+                      fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
               ],
             ),
           ),
-        if (showSecondText)
-          SizedBox(height: 6.h),
+        if (showSecondText) SizedBox(height: 6.h),
         if (showSecondText)
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 18.w),

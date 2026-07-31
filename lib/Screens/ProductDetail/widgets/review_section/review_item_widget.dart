@@ -22,7 +22,7 @@ class ReviewItemWidget extends StatelessWidget {
         color: AppColors.scaffoldColor,
         borderRadius: BorderRadius.circular(12.r),
         border: Border.all(
-          color: AppColors.lightGreyColor.withOpacity(0.3),
+          color: AppColors.lightGreyColor.withValues(alpha: 0.3),
         ),
       ),
       child: Column(
@@ -46,7 +46,7 @@ class ReviewItemWidget extends StatelessWidget {
           width: 40.w,
           height: 40.w,
           decoration: BoxDecoration(
-            color: AppColors.primaryColor.withOpacity(0.1),
+            color: AppColors.primaryColor.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(20.r),
           ),
           child: Icon(
@@ -126,8 +126,8 @@ class ReviewItemWidget extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 4.h),
           decoration: BoxDecoration(
             color: review.isApproved == 1
-                ? AppColors.greenColor.withOpacity(0.1)
-                : AppColors.orangeColor.withOpacity(0.1),
+                ? AppColors.greenColor.withValues(alpha: 0.1)
+                : AppColors.orangeColor.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(12.r),
           ),
           child: Row(
@@ -159,7 +159,7 @@ class ReviewItemWidget extends StatelessWidget {
         Container(
           padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 4.h),
           decoration: BoxDecoration(
-            color: AppColors.primaryColor.withOpacity(0.1),
+            color: AppColors.primaryColor.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(12.r),
           ),
           child: Text(

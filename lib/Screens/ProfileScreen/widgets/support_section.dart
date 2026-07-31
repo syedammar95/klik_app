@@ -25,11 +25,17 @@ class SupportSection extends StatelessWidget {
     );
   }
 
-  Widget _buildSupportItem(String title, IconData icon, {bool isLogout = false}) {
+  Widget _buildSupportItem(String title, IconData icon,
+      {bool isLogout = false}) {
     return ListTile(
-      leading: Icon(icon, color: isLogout ? AppColors.primaryColor : AppColors.blackColor),
+      leading: Icon(icon,
+          color: isLogout ? AppColors.primaryColor : AppColors.blackColor),
       title: Text(title, style: TextStyle(fontSize: 13.sp)),
-      trailing: Icon(Icons.arrow_forward_ios, size: 13.sp,color: AppColors.blackColor,),
+      trailing: Icon(
+        Icons.arrow_forward_ios,
+        size: 13.sp,
+        color: AppColors.blackColor,
+      ),
       onTap: () {},
     );
   }

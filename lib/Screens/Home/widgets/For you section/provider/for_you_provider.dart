@@ -82,12 +82,12 @@ class ForYouProvider with ChangeNotifier {
         'freeDelivery': true,
         'limitedTime': true,
       },
-
     ];
 
     _getTag['Hot Deals'] = [
       {
-        'imageUrl': 'assets/images/shiny-black-headphones-reflect-golden-nightclub-lights-generated-by-ai.jpg',
+        'imageUrl':
+            'assets/images/shiny-black-headphones-reflect-golden-nightclub-lights-generated-by-ai.jpg',
         'productName': 'Wireless Headphones',
         'price': 1800,
         'discountedPercent': 20,

@@ -13,7 +13,8 @@ class Chat02 extends StatelessWidget {
         backgroundColor: AppColors.primaryColor,
         elevation: 1,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white),
+          icon:
+              const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -69,9 +70,9 @@ class Chat02 extends StatelessWidget {
             child: Row(
               children: [
                 IconButton(
-                  icon: Icon(Icons.add_circle, color: Colors.white, size: 26.sp),
-                  onPressed: () {
-                  },
+                  icon:
+                      Icon(Icons.add_circle, color: Colors.white, size: 26.sp),
+                  onPressed: () {},
                 ),
                 SizedBox(width: 6.w),
                 Expanded(
@@ -80,13 +81,15 @@ class Chat02 extends StatelessWidget {
                       hintText: "Type a message",
                       filled: true,
                       fillColor: Colors.grey[200],
-                      contentPadding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 6.h),
+                      contentPadding:
+                          EdgeInsets.symmetric(horizontal: 14.w, vertical: 6.h),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.r),
                         borderSide: BorderSide.none,
                       ),
                       suffixIcon: IconButton(
-                        icon: Icon(Icons.emoji_emotions, color: Colors.black, size: 20.sp),
+                        icon: Icon(Icons.emoji_emotions,
+                            color: Colors.black, size: 20.sp),
                         onPressed: () {},
                       ),
                     ),

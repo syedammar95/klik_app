@@ -23,7 +23,8 @@ class PaymentMain extends StatelessWidget {
           style: TextStyle(fontSize: 16.sp, color: Colors.white),
         ),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white),
+          icon:
+              const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -41,7 +42,8 @@ class PaymentMain extends StatelessWidget {
               child: Container(
                 color: Colors.blue.shade100,
                 child: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 5.h, horizontal: 12.w),
+                  padding:
+                      EdgeInsets.symmetric(vertical: 5.h, horizontal: 12.w),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -53,7 +55,8 @@ class PaymentMain extends StatelessWidget {
                           'Please collect bank vouchers to avail bank discounts and mega deals/flash sales',
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
-                          style: TextStyle(fontSize: 11.sp, color: Colors.blue[900]),
+                          style: TextStyle(
+                              fontSize: 11.sp, color: Colors.blue[900]),
                         ),
                       ),
                     ],
@@ -102,7 +105,10 @@ class PaymentMain extends StatelessWidget {
                     showPaymentIcons: true,
                     rightIcon: Icons.arrow_forward_ios_rounded,
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const CreditDebit01()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const CreditDebit01()));
                     },
                   ),
                   SizedBox(height: 10.h),
@@ -113,7 +119,10 @@ class PaymentMain extends StatelessWidget {
                     showPaymentIcons: false,
                     rightIcon: Icons.arrow_forward_ios_rounded,
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const JazzCash01()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const JazzCash01()));
                     },
                   ),
                   SizedBox(height: 10.h),
@@ -124,7 +133,10 @@ class PaymentMain extends StatelessWidget {
                     showPaymentIcons: false,
                     rightIcon: Icons.arrow_forward_ios_rounded,
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const EasyPaisa01()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const EasyPaisa01()));
                     },
                   ),
                   SizedBox(height: 10.h),
@@ -135,7 +147,10 @@ class PaymentMain extends StatelessWidget {
                     showPaymentIcons: false,
                     rightIcon: Icons.arrow_forward_ios_rounded,
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const HblBank01()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const HblBank01()));
                     },
                   ),
                   SizedBox(height: 10.h),
@@ -146,7 +161,10 @@ class PaymentMain extends StatelessWidget {
                     showPaymentIcons: false,
                     rightIcon: Icons.arrow_forward_ios_rounded,
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const CashOnDelivery01()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const CashOnDelivery01()));
                     },
                   ),
                 ],
@@ -158,7 +176,8 @@ class PaymentMain extends StatelessWidget {
       bottomNavigationBar: Container(
         color: Colors.white,
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: 6.h, horizontal: 16.w), // Adjusted padding responsively
+          padding: EdgeInsets.symmetric(
+              vertical: 6.h, horizontal: 16.w), // Adjusted padding responsively
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -166,24 +185,38 @@ class PaymentMain extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('Subtotal', style: TextStyle(fontSize: 11.sp)), // Reduced font size
-                  Text('\$100', style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.bold)), // Reduced font size
+                  Text('Subtotal',
+                      style: TextStyle(fontSize: 11.sp)), // Reduced font size
+                  Text('\$100',
+                      style: TextStyle(
+                          fontSize: 11.sp,
+                          fontWeight: FontWeight.bold)), // Reduced font size
                 ],
               ),
               SizedBox(height: 12.h), // Adjusted height responsively
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('Total Amount', style: TextStyle(fontSize: 11.sp)), // Reduced font size
-                  Text('\$100', style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.bold)), // Reduced font size
+                  Text('Total Amount',
+                      style: TextStyle(fontSize: 11.sp)), // Reduced font size
+                  Text('\$100',
+                      style: TextStyle(
+                          fontSize: 11.sp,
+                          fontWeight: FontWeight.bold)), // Reduced font size
                 ],
               ),
               SizedBox(height: 12.h), // Adjusted height responsively
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('Please top-up', style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.bold)), // Reduced font size
-                  Text('\$100', style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.bold)), // Reduced font size
+                  Text('Please top-up',
+                      style: TextStyle(
+                          fontSize: 13.sp,
+                          fontWeight: FontWeight.bold)), // Reduced font size
+                  Text('\$100',
+                      style: TextStyle(
+                          fontSize: 13.sp,
+                          fontWeight: FontWeight.bold)), // Reduced font size
                 ],
               ),
               SizedBox(height: 4.h), // Adjusted height responsively
@@ -196,16 +229,20 @@ class PaymentMain extends StatelessWidget {
                     backgroundColor: AppColors.primaryColor,
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.r), // Adjusted border radius responsively
+                      borderRadius: BorderRadius.circular(
+                          10.r), // Adjusted border radius responsively
                     ),
-                    padding: EdgeInsets.symmetric(vertical: 6.h), // Adjusted padding responsively
+                    padding: EdgeInsets.symmetric(
+                        vertical: 6.h), // Adjusted padding responsively
                   ),
                   onPressed: () {
-                    _showBottomSheet(context, _walletDepositBottomSheet(context));
+                    _showBottomSheet(
+                        context, _walletDepositBottomSheet(context));
                   },
                   child: Text(
                     'TOPUP AND PAY',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13.sp),
+                    style:
+                        TextStyle(fontWeight: FontWeight.bold, fontSize: 13.sp),
                   ),
                 ),
               ),
@@ -213,7 +250,6 @@ class PaymentMain extends StatelessWidget {
           ),
         ),
       ),
-
     );
   }
 }
@@ -241,6 +277,7 @@ void _showBottomSheet(BuildContext context, Widget content) {
     ),
   );
 }
+
 Widget _walletDepositBottomSheet(BuildContext context) {
   return Column(
     children: [
@@ -279,7 +316,8 @@ Widget _walletDepositBottomSheet(BuildContext context) {
                       children: [
                         Text(
                           'Select a Method',
-                          style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.bold),
+                          style: TextStyle(
+                              fontSize: 13.sp, fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),
@@ -296,7 +334,8 @@ Widget _walletDepositBottomSheet(BuildContext context) {
                     SizedBox(width: 14.w),
                   ],
                 ),
-                Icon(Icons.arrow_forward_ios, size: 16.sp, color: AppColors.primaryColor),
+                Icon(Icons.arrow_forward_ios,
+                    size: 16.sp, color: AppColors.primaryColor),
               ],
             ),
           ),
@@ -308,7 +347,6 @@ Widget _walletDepositBottomSheet(BuildContext context) {
 
 Widget _selectMethodBottomSheet(BuildContext context) {
   return Column(
-
     children: [
       const CustomBottomSheet(
         title: 'Select Deposit Method',
@@ -331,9 +369,9 @@ Widget _selectMethodBottomSheet(BuildContext context) {
               style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.bold),
             ),
             Text(
-                'Add a new card',
-                style: TextStyle(fontSize: 11.sp, color: Colors.grey),
-              ),
+              'Add a new card',
+              style: TextStyle(fontSize: 11.sp, color: Colors.grey),
+            ),
             SizedBox(height: 10.h),
             OtherWalletItem(
               firstText: 'Credit/Debit Card',
@@ -341,7 +379,7 @@ Widget _selectMethodBottomSheet(BuildContext context) {
               leftIcon: Icons.credit_card,
               showPaymentIcons: false,
               rightIcon: Icons.radio_button_off,
-              onTap: (){
+              onTap: () {
                 _showBottomSheet(context, _debitCreditBottomSheet(context));
               },
               containerColor: Colors.grey.shade100,
@@ -362,7 +400,7 @@ Widget _selectMethodBottomSheet(BuildContext context) {
               leftIcon: Icons.credit_card,
               showPaymentIcons: false,
               rightIcon: Icons.radio_button_off,
-              onTap: (){
+              onTap: () {
                 _showBottomSheet(context, _jazzCashBottomSheet(context));
               },
               containerColor: Colors.grey.shade100,
@@ -374,7 +412,7 @@ Widget _selectMethodBottomSheet(BuildContext context) {
               leftIcon: Icons.credit_card,
               showPaymentIcons: false,
               rightIcon: Icons.radio_button_off,
-              onTap: (){
+              onTap: () {
                 _showBottomSheet(context, _easyPaisaBottomSheet(context));
               },
               containerColor: Colors.grey.shade100,
@@ -579,7 +617,8 @@ Widget _addCreditMethodBottomSheet(BuildContext context) {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text('Card Details', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13.sp)),
+            Text('Card Details',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13.sp)),
             Row(
               children: [
                 Icon(FontAwesomeIcons.ccMastercard, size: 18.r),
@@ -619,7 +658,8 @@ Widget _addCreditMethodBottomSheet(BuildContext context) {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10.0.r),
-                    borderSide: BorderSide(color: AppColors.primaryColor, width: 1.5.w),
+                    borderSide:
+                        BorderSide(color: AppColors.primaryColor, width: 1.5.w),
                   ),
                   contentPadding: EdgeInsets.symmetric(
                     vertical: 4.0.h,
@@ -650,17 +690,20 @@ Widget _addCreditMethodBottomSheet(BuildContext context) {
                         ),
                         enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10.0.r),
-                          borderSide: BorderSide(color: Colors.grey, width: 1.5.w),
+                          borderSide:
+                              BorderSide(color: Colors.grey, width: 1.5.w),
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10.0.r),
-                          borderSide: BorderSide(color: AppColors.primaryColor, width: 1.5.w),
+                          borderSide: BorderSide(
+                              color: AppColors.primaryColor, width: 1.5.w),
                         ),
                         contentPadding: EdgeInsets.symmetric(
                           vertical: 4.0.h,
                           horizontal: 12.0.w,
                         ),
-                        suffixIcon: Icon(Icons.help_outline, size: 18.r, color: Colors.grey),
+                        suffixIcon: Icon(Icons.help_outline,
+                            size: 18.r, color: Colors.grey),
                       ),
                     ),
                   ),
@@ -685,17 +728,20 @@ Widget _addCreditMethodBottomSheet(BuildContext context) {
                         ),
                         enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10.0.r),
-                          borderSide: BorderSide(color: Colors.grey, width: 1.5.w),
+                          borderSide:
+                              BorderSide(color: Colors.grey, width: 1.5.w),
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10.0.r),
-                          borderSide: BorderSide(color: AppColors.primaryColor, width: 1.5.w),
+                          borderSide: BorderSide(
+                              color: AppColors.primaryColor, width: 1.5.w),
                         ),
                         contentPadding: EdgeInsets.symmetric(
                           vertical: 4.0.h,
                           horizontal: 12.0.w,
                         ),
-                        suffixIcon: Icon(Icons.help_outline, size: 18.r, color: Colors.grey),
+                        suffixIcon: Icon(Icons.help_outline,
+                            size: 18.r, color: Colors.grey),
                       ),
                     ),
                   ),
@@ -725,13 +771,15 @@ Widget _addCreditMethodBottomSheet(BuildContext context) {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10.0.r),
-                    borderSide: BorderSide(color: AppColors.primaryColor, width: 1.5.w),
+                    borderSide:
+                        BorderSide(color: AppColors.primaryColor, width: 1.5.w),
                   ),
                   contentPadding: EdgeInsets.symmetric(
                     vertical: 4.0.h,
                     horizontal: 12.0.w,
                   ),
-                  suffixIcon: Icon(Icons.help_outline, size: 18.r, color: Colors.grey),
+                  suffixIcon:
+                      Icon(Icons.help_outline, size: 18.r, color: Colors.grey),
                 ),
               ),
             ),
@@ -753,7 +801,9 @@ Widget _addCreditMethodBottomSheet(BuildContext context) {
                 children: [
                   Icon(Icons.gpp_good, size: 16.r, color: Colors.green),
                   SizedBox(width: 8.w),
-                  Text('Your Card is safe with Valley', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13.sp)),
+                  Text('Your Card is safe with Valley',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, fontSize: 13.sp)),
                 ],
               ),
               SizedBox(height: 6.h),
@@ -762,7 +812,8 @@ Widget _addCreditMethodBottomSheet(BuildContext context) {
                 children: [
                   Icon(Icons.check, size: 16.r, color: Colors.green),
                   SizedBox(width: 8.w),
-                  Text('Compiles with PCO DSS for secure data handling.', style: TextStyle(fontSize: 11.sp)),
+                  Text('Compiles with PCO DSS for secure data handling.',
+                      style: TextStyle(fontSize: 11.sp)),
                 ],
               ),
               SizedBox(height: 6.h),
@@ -771,7 +822,8 @@ Widget _addCreditMethodBottomSheet(BuildContext context) {
                 children: [
                   Icon(Icons.check, size: 16.r, color: Colors.green),
                   SizedBox(width: 8.w),
-                  Text('Card info stays safe and encrypted.', style: TextStyle(fontSize: 11.sp)),
+                  Text('Card info stays safe and encrypted.',
+                      style: TextStyle(fontSize: 11.sp)),
                 ],
               ),
               SizedBox(height: 6.h),
@@ -780,7 +832,8 @@ Widget _addCreditMethodBottomSheet(BuildContext context) {
                 children: [
                   Icon(Icons.check, size: 16.r, color: Colors.green),
                   SizedBox(width: 8.w),
-                  Text('Advance security measures for safe transactions', style: TextStyle(fontSize: 11.sp)),
+                  Text('Advance security measures for safe transactions',
+                      style: TextStyle(fontSize: 11.sp)),
                 ],
               ),
             ],
@@ -813,7 +866,6 @@ Widget _addCreditMethodBottomSheet(BuildContext context) {
   );
 }
 
-
 Widget _addJazzCashBottomSheet(BuildContext context) {
   return Column(
     children: [
@@ -841,7 +893,8 @@ Widget _addJazzCashBottomSheet(BuildContext context) {
                 children: [
                   Text(
                     'JazzCash',
-                    style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.bold),
+                    style:
+                        TextStyle(fontSize: 13.sp, fontWeight: FontWeight.bold),
                     overflow: TextOverflow.ellipsis,
                   ),
                   Text(
@@ -865,7 +918,8 @@ Widget _addJazzCashBottomSheet(BuildContext context) {
                   SizedBox(height: 8.h),
                   Text(
                     'Note: Ensure your JazzCash account is Active and has sufficient balance',
-                    style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold),
+                    style:
+                        TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold),
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                   ),
@@ -908,7 +962,8 @@ Widget _addJazzCashBottomSheet(BuildContext context) {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10.0.r),
-                    borderSide: BorderSide(color: AppColors.primaryColor, width: 1.5.w),
+                    borderSide:
+                        BorderSide(color: AppColors.primaryColor, width: 1.5.w),
                   ),
                   contentPadding: EdgeInsets.symmetric(
                     vertical: 4.0.h,
@@ -932,7 +987,9 @@ Widget _addJazzCashBottomSheet(BuildContext context) {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text('Save Payment Option', style: TextStyle(fontSize: 12.sp)),
-              Text('We will save this account for your convenience. If required, you can remove the account in the "Payment Options" in the "Account" menu.', style: TextStyle(fontSize: 11.sp)),
+              Text(
+                  'We will save this account for your convenience. If required, you can remove the account in the "Payment Options" in the "Account" menu.',
+                  style: TextStyle(fontSize: 11.sp)),
             ],
           ),
         ),
@@ -962,7 +1019,6 @@ Widget _addJazzCashBottomSheet(BuildContext context) {
     ],
   );
 }
-
 
 Widget _addEasyPaisaBottomSheet(BuildContext context) {
   return Column(
@@ -1013,13 +1069,15 @@ Widget _addEasyPaisaBottomSheet(BuildContext context) {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10.0.r),
-                    borderSide: BorderSide(color: AppColors.primaryColor, width: 1.5.w),
+                    borderSide:
+                        BorderSide(color: AppColors.primaryColor, width: 1.5.w),
                   ),
                   contentPadding: EdgeInsets.symmetric(
                     vertical: 4.0.h,
                     horizontal: 12.0.w,
                   ),
-                  suffixIcon: Icon(Icons.keyboard_alt_outlined, size: 20.r, color: Colors.grey),
+                  suffixIcon: Icon(Icons.keyboard_alt_outlined,
+                      size: 20.r, color: Colors.grey),
                 ),
               ),
             ),
@@ -1075,8 +1133,7 @@ Widget _addEasyPaisaBottomSheet(BuildContext context) {
               ),
               padding: EdgeInsets.symmetric(vertical: 6.h),
             ),
-            onPressed: () {
-            },
+            onPressed: () {},
             child: Text(
               'Next',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13.sp),

@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../Utils/app_colors.dart';
 import '../../global widgets/activities_promos_card.dart';
 
-
 class Promos01 extends StatelessWidget {
   const Promos01({super.key});
 
@@ -17,7 +16,10 @@ class Promos01 extends StatelessWidget {
           style: TextStyle(fontSize: 16.sp, color: Colors.white),
         ),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white,),
+          icon: const Icon(
+            Icons.arrow_back_ios_new_rounded,
+            color: Colors.white,
+          ),
           onPressed: () {
             Navigator.pop(context);
           },

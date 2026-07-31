@@ -76,7 +76,7 @@ class _AllReviewsScreenState extends State<AllReviewsScreen> {
                     '${reviewProvider.reviews.length} reviews',
                     style: TextStyle(
                       fontSize: 14.sp,
-                      color: AppColors.whiteColor.withOpacity(0.8),
+                      color: AppColors.whiteColor.withValues(alpha: 0.8),
                     ),
                   ),
                 ),
@@ -229,11 +229,11 @@ class _AllReviewsScreenState extends State<AllReviewsScreen> {
       decoration: BoxDecoration(
         color: AppColors.whiteColor,
         borderRadius: BorderRadius.circular(12.r),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             color: AppColors.boxShadowColor,
             blurRadius: 8,
-            offset: const Offset(0, 2),
+            offset: Offset(0, 2),
           ),
         ],
       ),
@@ -296,8 +296,8 @@ class _AllReviewsScreenState extends State<AllReviewsScreen> {
                           Expanded(
                             child: LinearProgressIndicator(
                               value: percentage / 100,
-                              backgroundColor:
-                                  AppColors.lightGreyColor.withOpacity(0.3),
+                              backgroundColor: AppColors.lightGreyColor
+                                  .withValues(alpha: 0.3),
                               valueColor: const AlwaysStoppedAnimation<Color>(
                                   AppColors.yellowColor),
                               minHeight: 6.h,
@@ -346,7 +346,7 @@ class _AllReviewsScreenState extends State<AllReviewsScreen> {
         gradient: LinearGradient(
           colors: [
             AppColors.primaryColor,
-            AppColors.primaryColor.withOpacity(0.8),
+            AppColors.primaryColor.withValues(alpha: 0.8),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
@@ -354,7 +354,7 @@ class _AllReviewsScreenState extends State<AllReviewsScreen> {
         borderRadius: BorderRadius.circular(16.r),
         boxShadow: [
           BoxShadow(
-            color: AppColors.primaryColor.withOpacity(0.4),
+            color: AppColors.primaryColor.withValues(alpha: 0.4),
             blurRadius: 12,
             offset: const Offset(0, 6),
           ),
@@ -369,7 +369,7 @@ class _AllReviewsScreenState extends State<AllReviewsScreen> {
           width: 24.w,
           height: 24.w,
           decoration: BoxDecoration(
-            color: AppColors.whiteColor.withOpacity(0.2),
+            color: AppColors.whiteColor.withValues(alpha: 0.2),
             borderRadius: BorderRadius.circular(12.r),
           ),
           child: Icon(
@@ -409,8 +409,8 @@ class _AllReviewsScreenState extends State<AllReviewsScreen> {
 
           if (success && mounted) {
             ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: const Text('Review submitted successfully!'),
+              const SnackBar(
+                content: Text('Review submitted successfully!'),
                 backgroundColor: AppColors.greenColor,
                 behavior: SnackBarBehavior.floating,
               ),

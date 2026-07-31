@@ -633,7 +633,7 @@ class CartProvider with ChangeNotifier {
   void addToCart(int productId) {
     _cart[productId] = true;
     _lastCartModification = DateTime.now(); // 🔧 FIX: Track modification time
-    print("🛒 Updated cart: $_cart at ${_lastCartModification}");
+    print("🛒 Updated cart: $_cart at $_lastCartModification");
     notifyListeners();
   }
 
@@ -733,10 +733,12 @@ class CartProvider with ChangeNotifier {
 
       // Handle different success formats
       if (successValue == true) return true; // Boolean true
-      if (successValue is String && successValue.isNotEmpty)
+      if (successValue is String && successValue.isNotEmpty) {
         return true; // Non-empty string
-      if (successValue is int && successValue > 0)
+      }
+      if (successValue is int && successValue > 0) {
         return true; // Positive integer
+      }
 
       print(
           "🛒 Cart API success value: $successValue (type: ${successValue.runtimeType})");
@@ -1017,9 +1019,9 @@ class CartProvider with ChangeNotifier {
           final nameWithoutExt =
               filename.substring(0, filename.lastIndexOf('.'));
           variations.addAll([
-            'https://ehomes.pk/Vendor_Panel/uploads/${nameWithoutExt}.jpg',
-            'https://ehomes.pk/Vendor_Panel/uploads/${nameWithoutExt}.png',
-            'https://ehomes.pk/Vendor_Panel/uploads/${nameWithoutExt}.jpeg',
+            'https://ehomes.pk/Vendor_Panel/uploads/$nameWithoutExt.jpg',
+            'https://ehomes.pk/Vendor_Panel/uploads/$nameWithoutExt.png',
+            'https://ehomes.pk/Vendor_Panel/uploads/$nameWithoutExt.jpeg',
           ]);
         }
       }

@@ -5,13 +5,13 @@ class UserDataModel {
 
   UserDataModel.fromJson(Map<String, dynamic> json) {
     profile =
-        json['profile'] != null ? new Profile.fromJson(json['profile']) : null;
+        json['profile'] != null ? Profile.fromJson(json['profile']) : null;
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    if (this.profile != null) {
-      data['profile'] = this.profile!.toJson();
+    final Map<String, dynamic> data = <String, dynamic>{};
+    if (profile != null) {
+      data['profile'] = profile!.toJson();
     }
     return data;
   }
@@ -46,14 +46,14 @@ class Profile {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['user_name'] = this.userName;
-    data['email'] = this.email;
-    data['phone'] = this.phone;
-    data['address'] = this.address;
-    data['city'] = this.city;
-    data['user_photo'] = this.userPhoto;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['id'] = id;
+    data['user_name'] = userName;
+    data['email'] = email;
+    data['phone'] = phone;
+    data['address'] = address;
+    data['city'] = city;
+    data['user_photo'] = userPhoto;
     return data;
   }
 }

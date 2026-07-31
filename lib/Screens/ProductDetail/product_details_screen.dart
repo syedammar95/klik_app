@@ -8,8 +8,6 @@ import 'provider/product_detail_provider.dart';
 import 'widgets/overview_section.dart';
 import 'widgets/product_info_section.dart';
 import 'widgets/product_detail_tab_bar.dart';
-import 'widgets/product_detail_bottom_buttons.dart';
-import 'widgets/debug_cart_button.dart';
 import 'widgets/cart_test_button.dart';
 import 'widgets/product_detail_section.dart';
 
@@ -100,8 +98,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen>
               ),
             ],
           ),
-          bottomNavigationBar:
-              CartTestButton(product: widget.product),
+          bottomNavigationBar: CartTestButton(product: widget.product),
         );
       },
     );

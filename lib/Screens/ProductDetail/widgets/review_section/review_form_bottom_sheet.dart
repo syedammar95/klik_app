@@ -105,7 +105,7 @@ class _ReviewFormBottomSheetState extends State<ReviewFormBottomSheet> {
             width: 40.w,
             height: 40.w,
             decoration: BoxDecoration(
-              color: AppColors.primaryColor.withOpacity(0.1),
+              color: AppColors.primaryColor.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(20.r),
             ),
             child: Icon(
@@ -157,7 +157,7 @@ class _ReviewFormBottomSheetState extends State<ReviewFormBottomSheet> {
         color: AppColors.scaffoldColor,
         borderRadius: BorderRadius.circular(12.r),
         border: Border.all(
-          color: AppColors.lightGreyColor.withOpacity(0.3),
+          color: AppColors.lightGreyColor.withValues(alpha: 0.3),
         ),
       ),
       child: Row(
@@ -166,7 +166,7 @@ class _ReviewFormBottomSheetState extends State<ReviewFormBottomSheet> {
             width: 60.w,
             height: 60.w,
             decoration: BoxDecoration(
-              color: AppColors.lightGreyColor.withOpacity(0.3),
+              color: AppColors.lightGreyColor.withValues(alpha: 0.3),
               borderRadius: BorderRadius.circular(8.r),
             ),
             child: widget.product.images.isNotEmpty
@@ -244,11 +244,11 @@ class _ReviewFormBottomSheetState extends State<ReviewFormBottomSheet> {
             ),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12.r),
-              borderSide: BorderSide(color: AppColors.lightGreyColor),
+              borderSide: const BorderSide(color: AppColors.lightGreyColor),
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12.r),
-              borderSide: BorderSide(color: AppColors.lightGreyColor),
+              borderSide: const BorderSide(color: AppColors.lightGreyColor),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12.r),
@@ -298,11 +298,11 @@ class _ReviewFormBottomSheetState extends State<ReviewFormBottomSheet> {
             ),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12.r),
-              borderSide: BorderSide(color: AppColors.lightGreyColor),
+              borderSide: const BorderSide(color: AppColors.lightGreyColor),
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12.r),
-              borderSide: BorderSide(color: AppColors.lightGreyColor),
+              borderSide: const BorderSide(color: AppColors.lightGreyColor),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12.r),
@@ -422,11 +422,11 @@ class _ReviewFormBottomSheetState extends State<ReviewFormBottomSheet> {
             ),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12.r),
-              borderSide: BorderSide(color: AppColors.lightGreyColor),
+              borderSide: const BorderSide(color: AppColors.lightGreyColor),
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12.r),
-              borderSide: BorderSide(color: AppColors.lightGreyColor),
+              borderSide: const BorderSide(color: AppColors.lightGreyColor),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12.r),
@@ -493,7 +493,7 @@ class _ReviewFormBottomSheetState extends State<ReviewFormBottomSheet> {
               gradient: LinearGradient(
                 colors: [
                   AppColors.primaryColor,
-                  AppColors.primaryColor.withOpacity(0.8),
+                  AppColors.primaryColor.withValues(alpha: 0.8),
                 ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
@@ -501,7 +501,7 @@ class _ReviewFormBottomSheetState extends State<ReviewFormBottomSheet> {
               borderRadius: BorderRadius.circular(12.r),
               boxShadow: [
                 BoxShadow(
-                  color: AppColors.primaryColor.withOpacity(0.3),
+                  color: AppColors.primaryColor.withValues(alpha: 0.3),
                   blurRadius: 8,
                   offset: const Offset(0, 4),
                 ),
@@ -530,7 +530,8 @@ class _ReviewFormBottomSheetState extends State<ReviewFormBottomSheet> {
                               width: 24.w,
                               height: 24.w,
                               decoration: BoxDecoration(
-                                color: AppColors.whiteColor.withOpacity(0.2),
+                                color:
+                                    AppColors.whiteColor.withValues(alpha: 0.2),
                                 borderRadius: BorderRadius.circular(12.r),
                               ),
                               child: Icon(
@@ -567,8 +568,8 @@ class _ReviewFormBottomSheetState extends State<ReviewFormBottomSheet> {
 
     if (_selectedRating == 0) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: const Text('Please select a rating'),
+        const SnackBar(
+          content: Text('Please select a rating'),
           backgroundColor: AppColors.redColor,
           behavior: SnackBarBehavior.floating,
         ),

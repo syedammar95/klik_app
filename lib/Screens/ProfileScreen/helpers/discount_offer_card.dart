@@ -39,11 +39,11 @@ class DiscountOfferCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: row1Children),
                     SizedBox(height: 8.h),
                     Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: row2Children),
                   ],
                 ),

@@ -18,7 +18,10 @@ class Settings01 extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           'Settings',
-          style: TextStyle(fontSize: 18.sp,fontWeight: FontWeight.bold, color: AppColors.whiteColor),
+          style: TextStyle(
+              fontSize: 18.sp,
+              fontWeight: FontWeight.bold,
+              color: AppColors.whiteColor),
         ),
         // leading: IconButton(
         //   icon: const Icon(Icons.arrow_back_ios_new_rounded, color: AppColors.whiteColor),
@@ -62,22 +65,25 @@ class Settings01 extends StatelessWidget {
                   _buildDivider(),
                   _buildListItem(Icons.feedback, 'Feedback', context),
                   _buildDivider(),
-                  _buildListItem(Icons.delete, 'Request Account Deletion', context),
+                  _buildListItem(
+                      Icons.delete, 'Request Account Deletion', context),
                 ],
               ),
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.blackColor,
-                foregroundColor: AppColors.whiteColor,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.r)),
-              minimumSize: Size(200.w, 35.h)
-              ),
+                  backgroundColor: AppColors.blackColor,
+                  foregroundColor: AppColors.whiteColor,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.r)),
+                  minimumSize: Size(200.w, 35.h)),
               onPressed: () => Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const SignInWidget()),
               ),
-              child: Text('Logout', style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold)),
+              child: Text('Logout',
+                  style:
+                      TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold)),
             ),
           ],
         ),
@@ -88,7 +94,11 @@ class Settings01 extends StatelessWidget {
   Widget _buildListItem(IconData icon, String title, BuildContext context) {
     return ListTile(
       contentPadding: EdgeInsets.symmetric(horizontal: 12.w),
-      leading: Icon(icon, color: AppColors.secondaryColor, size: 20.h,),
+      leading: Icon(
+        icon,
+        color: AppColors.secondaryColor,
+        size: 20.h,
+      ),
       title: Text(
         title,
         style: TextStyle(fontSize: 14.sp),
@@ -104,7 +114,8 @@ class Settings01 extends StatelessWidget {
           case 'Address Book':
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const SelectShippingAddress()),
+              MaterialPageRoute(
+                  builder: (context) => const SelectShippingAddress()),
             );
             break;
           case 'Contact us':

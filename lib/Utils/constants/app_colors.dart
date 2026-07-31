@@ -1,10 +1,10 @@
 import 'package:flutter/animation.dart';
 
 class AppColors {
-  static const Color primaryColor =  Color(0xFF629D23);
-  static const Color lightGreenColor =  Color(0xFFC8E6C9);
-  static const Color greenColor =  Color(0xFF4CAF50);
-  static const Color orangeColor =  Color(0xFFF17542);
+  static const Color primaryColor = Color(0xFF629D23);
+  static const Color lightGreenColor = Color(0xFFC8E6C9);
+  static const Color greenColor = Color(0xFF4CAF50);
+  static const Color orangeColor = Color(0xFFF17542);
   static const Color iconColor = Color(0xFF1C1C1C);
   static const Color redColor = Color(0xFFDA4A4A);
   static const Color lightGreyColor = Color(0xFFA5A1A1);

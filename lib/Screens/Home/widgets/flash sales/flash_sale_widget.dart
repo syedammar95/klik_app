@@ -185,7 +185,7 @@ class FlashSaleWidget extends StatelessWidget {
     } catch (e) {
       debugPrint('Error navigating to product detail: $e');
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
+        const SnackBar(
           content: Text('Error loading product details'),
           backgroundColor: AppColors.redColor,
         ),

@@ -36,11 +36,11 @@ class ProductService {
 
               // Handle webp/jpg extension issues
               if (imageUrl.contains('.webp/')) {
-                imageUrl = imageUrl.split('.webp/')[0] + '.webp';
+                imageUrl = '${imageUrl.split('.webp/')[0]}.webp';
               } else if (imageUrl.contains('.jpg/')) {
-                imageUrl = imageUrl.split('.jpg/')[0] + '.jpg';
+                imageUrl = '${imageUrl.split('.jpg/')[0]}.jpg';
               } else if (imageUrl.contains('.png/')) {
-                imageUrl = imageUrl.split('.png/')[0] + '.png';
+                imageUrl = '${imageUrl.split('.png/')[0]}.png';
               }
 
               // Add extension if missing

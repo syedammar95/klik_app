@@ -116,31 +116,47 @@ class ActivitiesPromosCard extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.only(top: 7.h),
                             child: Container(
-                              padding: EdgeInsets.only(left: 7.w, right: 3.w),
-                              decoration: const BoxDecoration(
-                                color: Colors.white,
-                              ),
-                              child: Text('MID MONTH SALE',
-                                  style: TextStyle(fontSize: 9.sp, fontWeight: FontWeight.bold, color: AppColors.primaryColor))),
+                                padding: EdgeInsets.only(left: 7.w, right: 3.w),
+                                decoration: const BoxDecoration(
+                                  color: Colors.white,
+                                ),
+                                child: Text('MID MONTH SALE',
+                                    style: TextStyle(
+                                        fontSize: 9.sp,
+                                        fontWeight: FontWeight.bold,
+                                        color: AppColors.primaryColor))),
                           ),
                           Padding(
                             padding: EdgeInsets.all(6.w),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(category, style: TextStyle(fontSize: 13.sp,fontWeight: FontWeight.bold, color: categoryColor)),
-                                Text(deal, style: TextStyle(fontSize: 13.sp,fontWeight: FontWeight.bold, color: dealColor)),
+                                Text(category,
+                                    style: TextStyle(
+                                        fontSize: 13.sp,
+                                        fontWeight: FontWeight.bold,
+                                        color: categoryColor)),
+                                Text(deal,
+                                    style: TextStyle(
+                                        fontSize: 13.sp,
+                                        fontWeight: FontWeight.bold,
+                                        color: dealColor)),
                                 SizedBox(height: 3.h),
-                                Text(dealLine, style: TextStyle(fontSize: 11.sp, color: dealLineColor)),
+                                Text(dealLine,
+                                    style: TextStyle(
+                                        fontSize: 11.sp, color: dealLineColor)),
                                 SizedBox(height: 3.h),
                                 Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 3.w),
+                                    padding:
+                                        EdgeInsets.symmetric(horizontal: 3.w),
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(2.r),
                                       color: buttonColor,
                                     ),
                                     child: Text(buttonText,
-                                        style: TextStyle(fontSize: 7.sp,color: buttonTextColor))),
+                                        style: TextStyle(
+                                            fontSize: 7.sp,
+                                            color: buttonTextColor))),
                               ],
                             ),
                           ),
@@ -162,15 +178,18 @@ class ActivitiesPromosCard extends StatelessWidget {
                               children: [
                                 Text(
                                   'UP TO',
-                                  style: TextStyle(fontSize: 5.sp, color: Colors.white),
+                                  style: TextStyle(
+                                      fontSize: 5.sp, color: Colors.white),
                                 ),
                                 Text(
                                   '$percent%',
-                                  style: TextStyle(fontSize: 13.sp, color: Colors.white),
+                                  style: TextStyle(
+                                      fontSize: 13.sp, color: Colors.white),
                                 ),
                                 Text(
                                   'OFF',
-                                  style: TextStyle(fontSize: 5.sp, color: Colors.white),
+                                  style: TextStyle(
+                                      fontSize: 5.sp, color: Colors.white),
                                 ),
                               ],
                             ),
@@ -193,7 +212,10 @@ class ActivitiesPromosCard extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 4.h),
-                Text(lastLongText, style: TextStyle(color: Colors.grey, fontSize: 11.sp),),
+                Text(
+                  lastLongText,
+                  style: TextStyle(color: Colors.grey, fontSize: 11.sp),
+                ),
               ],
             ),
           ],

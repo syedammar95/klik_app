@@ -16,7 +16,10 @@ class OrdersScreen extends StatelessWidget {
           style: TextStyle(fontSize: 16.sp, color: Colors.white),
         ),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white,),
+          icon: const Icon(
+            Icons.arrow_back_ios_new_rounded,
+            color: Colors.white,
+          ),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -39,7 +42,8 @@ class OrdersScreen extends StatelessWidget {
                     secondText: '1 minute ago',
                     leftIcon: Icons.credit_card,
                     secondImage: "assets/images/img.png",
-                    longText: "Dear customer, we're sorry that your order has been cancelled. Please tap here to find the",
+                    longText:
+                        "Dear customer, we're sorry that your order has been cancelled. Please tap here to find the",
                     orderId: "5627657626552676",
                     onTap: () {},
                   ),
@@ -49,7 +53,8 @@ class OrdersScreen extends StatelessWidget {
                     secondText: '1 minute ago',
                     leftIcon: Icons.credit_card,
                     secondImage: "assets/images/img.png",
-                    longText: "Dear customer, we're sorry that your order has been cancelled. Please tap here to find the",
+                    longText:
+                        "Dear customer, we're sorry that your order has been cancelled. Please tap here to find the",
                     orderId: "5627657626552676",
                     onTap: () {},
                   ),
@@ -59,7 +64,8 @@ class OrdersScreen extends StatelessWidget {
                     secondText: '1 minute ago',
                     leftIcon: Icons.credit_card,
                     secondImage: "assets/images/img.png",
-                    longText: "Dear customer, we're sorry that your order has been cancelled. Please tap here to find the",
+                    longText:
+                        "Dear customer, we're sorry that your order has been cancelled. Please tap here to find the",
                     orderId: "5627657626552676",
                     onTap: () {},
                   ),
@@ -69,7 +75,8 @@ class OrdersScreen extends StatelessWidget {
                     secondText: '1 minute ago',
                     leftIcon: Icons.credit_card,
                     secondImage: "assets/images/img.png",
-                    longText: "Dear customer, we're sorry that your order has been cancelled. Please tap here to find the",
+                    longText:
+                        "Dear customer, we're sorry that your order has been cancelled. Please tap here to find the",
                     orderId: "5627657626552676",
                     onTap: () {},
                   ),

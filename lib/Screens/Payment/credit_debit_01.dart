@@ -16,7 +16,8 @@ class CreditDebit01 extends StatelessWidget {
           style: TextStyle(fontSize: 16.sp, color: Colors.white),
         ),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white),
+          icon:
+              const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -34,7 +35,8 @@ class CreditDebit01 extends StatelessWidget {
               child: Container(
                 color: Colors.blue.shade100,
                 child: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 6.h, horizontal: 14.w),
+                  padding:
+                      EdgeInsets.symmetric(vertical: 6.h, horizontal: 14.w),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -46,7 +48,8 @@ class CreditDebit01 extends StatelessWidget {
                           'Please collect bank vouchers to avail bank discounts and mega deals/flash sales',
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
-                          style: TextStyle(fontSize: 12.sp, color: Colors.blue[900]),
+                          style: TextStyle(
+                              fontSize: 12.sp, color: Colors.blue[900]),
                         ),
                       ),
                     ],
@@ -59,7 +62,8 @@ class CreditDebit01 extends StatelessWidget {
               child: Container(
                 color: Colors.green.shade100,
                 child: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 6.h, horizontal: 14.w),
+                  padding:
+                      EdgeInsets.symmetric(vertical: 6.h, horizontal: 14.w),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -90,7 +94,8 @@ class CreditDebit01 extends StatelessWidget {
             Column(
               children: [
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 8.h),
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 12.w, vertical: 8.h),
                   child: ConstrainedBox(
                     constraints: BoxConstraints(
                       minHeight: 35.h,
@@ -109,11 +114,13 @@ class CreditDebit01 extends StatelessWidget {
                         ),
                         enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10.0.r),
-                          borderSide: BorderSide(color: Colors.grey, width: 1.5.w),
+                          borderSide:
+                              BorderSide(color: Colors.grey, width: 1.5.w),
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10.0.r),
-                          borderSide: BorderSide(color: AppColors.primaryColor, width: 1.5.w),
+                          borderSide: BorderSide(
+                              color: AppColors.primaryColor, width: 1.5.w),
                         ),
                         contentPadding: EdgeInsets.symmetric(
                           vertical: 4.h,
@@ -146,17 +153,21 @@ class CreditDebit01 extends StatelessWidget {
                               ),
                               enabledBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10.0.r),
-                                borderSide: BorderSide(color: Colors.grey, width: 1.5.w),
+                                borderSide: BorderSide(
+                                    color: Colors.grey, width: 1.5.w),
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10.0.r),
-                                borderSide: BorderSide(color: AppColors.primaryColor, width: 1.5.w),
+                                borderSide: BorderSide(
+                                    color: AppColors.primaryColor,
+                                    width: 1.5.w),
                               ),
                               contentPadding: EdgeInsets.symmetric(
                                 vertical: 4.h,
                                 horizontal: 12.w,
                               ),
-                              suffixIcon: Icon(Icons.help_outline, size: 20.sp, color: Colors.grey),
+                              suffixIcon: Icon(Icons.help_outline,
+                                  size: 20.sp, color: Colors.grey),
                             ),
                           ),
                         ),
@@ -181,17 +192,21 @@ class CreditDebit01 extends StatelessWidget {
                               ),
                               enabledBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10.0.r),
-                                borderSide: BorderSide(color: Colors.grey, width: 1.5.w),
+                                borderSide: BorderSide(
+                                    color: Colors.grey, width: 1.5.w),
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10.0.r),
-                                borderSide: BorderSide(color: AppColors.primaryColor, width: 1.5.w),
+                                borderSide: BorderSide(
+                                    color: AppColors.primaryColor,
+                                    width: 1.5.w),
                               ),
                               contentPadding: EdgeInsets.symmetric(
                                 vertical: 4.h,
                                 horizontal: 12.w,
                               ),
-                              suffixIcon: Icon(Icons.help_outline, size: 20.sp, color: Colors.grey),
+                              suffixIcon: Icon(Icons.help_outline,
+                                  size: 20.sp, color: Colors.grey),
                             ),
                           ),
                         ),
@@ -200,7 +215,8 @@ class CreditDebit01 extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 8.h),
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 12.w, vertical: 8.h),
                   child: ConstrainedBox(
                     constraints: BoxConstraints(
                       minHeight: 35.h,
@@ -219,17 +235,20 @@ class CreditDebit01 extends StatelessWidget {
                         ),
                         enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10.0.r),
-                          borderSide: BorderSide(color: Colors.grey, width: 1.5.w),
+                          borderSide:
+                              BorderSide(color: Colors.grey, width: 1.5.w),
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10.0.r),
-                          borderSide: BorderSide(color: AppColors.primaryColor, width: 1.5.w),
+                          borderSide: BorderSide(
+                              color: AppColors.primaryColor, width: 1.5.w),
                         ),
                         contentPadding: EdgeInsets.symmetric(
                           vertical: 4.h,
                           horizontal: 12.w,
                         ),
-                        suffixIcon: Icon(Icons.help_outline, size: 20.sp, color: Colors.grey),
+                        suffixIcon: Icon(Icons.help_outline,
+                            size: 20.sp, color: Colors.grey),
                       ),
                     ),
                   ),
@@ -259,15 +278,23 @@ class CreditDebit01 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text('Subtotal', style: TextStyle(fontSize: 12.sp)),
-                  Text('\$100', style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold)),
+                  Text('\$100',
+                      style: TextStyle(
+                          fontSize: 12.sp, fontWeight: FontWeight.bold)),
                 ],
               ),
               SizedBox(height: 12.h),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('Total Amount', style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold)),
-                  Text('\$100', style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.bold, color: AppColors.primaryColor)),
+                  Text('Total Amount',
+                      style: TextStyle(
+                          fontSize: 14.sp, fontWeight: FontWeight.bold)),
+                  Text('\$100',
+                      style: TextStyle(
+                          fontSize: 14.sp,
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.primaryColor)),
                 ],
               ),
               SizedBox(height: 4.h),
@@ -287,7 +314,8 @@ class CreditDebit01 extends StatelessWidget {
                   onPressed: () {},
                   child: Text(
                     'Pay Now',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13.sp),
+                    style:
+                        TextStyle(fontWeight: FontWeight.bold, fontSize: 13.sp),
                   ),
                 ),
               ),

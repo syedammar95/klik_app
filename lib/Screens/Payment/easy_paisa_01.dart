@@ -16,7 +16,8 @@ class EasyPaisa01 extends StatelessWidget {
           style: TextStyle(fontSize: 16.sp, color: Colors.white),
         ),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white),
+          icon:
+              const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -34,7 +35,8 @@ class EasyPaisa01 extends StatelessWidget {
               child: Container(
                 color: Colors.blue.shade100,
                 child: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 6.h, horizontal: 12.w),
+                  padding:
+                      EdgeInsets.symmetric(vertical: 6.h, horizontal: 12.w),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -46,7 +48,8 @@ class EasyPaisa01 extends StatelessWidget {
                           'Please collect bank vouchers to avail bank discounts and mega deals/flash sales',
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
-                          style: TextStyle(fontSize: 11.sp, color: Colors.blue[900]),
+                          style: TextStyle(
+                              fontSize: 11.sp, color: Colors.blue[900]),
                         ),
                       ),
                     ],
@@ -63,11 +66,13 @@ class EasyPaisa01 extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(FontAwesomeIcons.ccVisa, size: 22.sp, color: AppColors.primaryColor),
+                      Icon(FontAwesomeIcons.ccVisa,
+                          size: 22.sp, color: AppColors.primaryColor),
                       SizedBox(width: 2.w),
                       Expanded(
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 18.w, vertical: 8.h),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 18.w, vertical: 8.h),
                           child: Text(
                             'Pay with your EasyPaisa Account. Please make sure you have enough balance in your account.',
                             style: TextStyle(fontSize: 11.sp),
@@ -89,10 +94,19 @@ class EasyPaisa01 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Note:', style: TextStyle(fontSize: 11.sp, color: Colors.grey),),
-                  Text('1. Ensure your EasyPaisa account is Active', style: TextStyle(fontSize: 11.sp, color: Colors.grey),),
+                  Text(
+                    'Note:',
+                    style: TextStyle(fontSize: 11.sp, color: Colors.grey),
+                  ),
+                  Text(
+                    '1. Ensure your EasyPaisa account is Active',
+                    style: TextStyle(fontSize: 11.sp, color: Colors.grey),
+                  ),
                   SizedBox(height: 6.h),
-                  Text('2. Sufficient balance in your account for successful transactions', style: TextStyle(fontSize: 11.sp, color: Colors.grey),),
+                  Text(
+                    '2. Sufficient balance in your account for successful transactions',
+                    style: TextStyle(fontSize: 11.sp, color: Colors.grey),
+                  ),
                 ],
               ),
             ),
@@ -111,15 +125,20 @@ class EasyPaisa01 extends StatelessWidget {
                           child: TextField(
                             decoration: InputDecoration(
                               hintText: 'EasyPaisa Account Number',
-                              hintStyle: TextStyle(color: Colors.grey, fontSize: 13.sp, fontWeight: FontWeight.normal),
+                              hintStyle: TextStyle(
+                                  color: Colors.grey,
+                                  fontSize: 13.sp,
+                                  fontWeight: FontWeight.normal),
                               border: InputBorder.none,
                               enabledBorder: const UnderlineInputBorder(
                                 borderSide: BorderSide(color: Colors.grey),
                               ),
-                              focusedBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(color: AppColors.primaryColor),
+                              focusedBorder: const UnderlineInputBorder(
+                                borderSide:
+                                    BorderSide(color: AppColors.primaryColor),
                               ),
-                              contentPadding: EdgeInsets.symmetric(vertical: 8.h, horizontal: 0.w),
+                              contentPadding: EdgeInsets.symmetric(
+                                  vertical: 8.h, horizontal: 0.w),
                             ),
                             style: TextStyle(fontSize: 13.sp),
                             maxLines: 1,
@@ -142,54 +161,61 @@ class EasyPaisa01 extends StatelessWidget {
           ],
         ),
       ),
-        bottomNavigationBar: Container(
-          color: Colors.white,
-          child: Padding(
-            padding: EdgeInsets.symmetric(vertical: 8.h, horizontal: 20.w),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                SizedBox(height: 8.h),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text('Subtotal', style: TextStyle(fontSize: 12.sp)),
-                    Text('\$100', style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold)),
-                  ],
-                ),
-                SizedBox(height: 12.h),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text('Total Amount', style: TextStyle(fontSize: 13.sp)),
-                    Text('\$100', style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.bold, color: AppColors.primaryColor)),
-                  ],
-                ),
-                SizedBox(height: 4.h),
-                Divider(color: Colors.grey.shade300),
-                SizedBox(height: 4.h),
-                SizedBox(
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppColors.primaryColor,
-                      foregroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.r),
-                      ),
-                      padding: EdgeInsets.symmetric(vertical: 6.h),
+      bottomNavigationBar: Container(
+        color: Colors.white,
+        child: Padding(
+          padding: EdgeInsets.symmetric(vertical: 8.h, horizontal: 20.w),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              SizedBox(height: 8.h),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text('Subtotal', style: TextStyle(fontSize: 12.sp)),
+                  Text('\$100',
+                      style: TextStyle(
+                          fontSize: 12.sp, fontWeight: FontWeight.bold)),
+                ],
+              ),
+              SizedBox(height: 12.h),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text('Total Amount', style: TextStyle(fontSize: 13.sp)),
+                  Text('\$100',
+                      style: TextStyle(
+                          fontSize: 13.sp,
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.primaryColor)),
+                ],
+              ),
+              SizedBox(height: 4.h),
+              Divider(color: Colors.grey.shade300),
+              SizedBox(height: 4.h),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.primaryColor,
+                    foregroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.r),
                     ),
-                    onPressed: () {},
-                    child: Text(
-                      'Pay Now',
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13.sp),
-                    ),
+                    padding: EdgeInsets.symmetric(vertical: 6.h),
+                  ),
+                  onPressed: () {},
+                  child: Text(
+                    'Pay Now',
+                    style:
+                        TextStyle(fontWeight: FontWeight.bold, fontSize: 13.sp),
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
+      ),
     );
   }
 }

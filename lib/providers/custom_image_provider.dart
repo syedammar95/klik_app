@@ -1,11 +1,11 @@
 import 'dart:async';
 import 'dart:ui' as ui;
-import 'dart:typed_data';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-class CustomNetworkImageProvider extends ImageProvider<CustomNetworkImageProvider> {
+class CustomNetworkImageProvider
+    extends ImageProvider<CustomNetworkImageProvider> {
   final String url;
   final Map<String, String>? headers;
   final double scale;

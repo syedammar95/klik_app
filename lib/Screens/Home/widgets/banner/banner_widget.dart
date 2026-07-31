@@ -93,7 +93,7 @@ class BannerWidgetState extends State<BannerWidget> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: List.generate(
                   bannerCount,
-                      (index) => AnimatedContainer(
+                  (index) => AnimatedContainer(
                     duration: const Duration(milliseconds: 300),
                     margin: EdgeInsets.symmetric(horizontal: 3.w),
                     width: _currentPage == index ? 8.w : 6.w,

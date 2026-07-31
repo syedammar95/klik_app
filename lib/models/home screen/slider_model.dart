@@ -33,10 +33,10 @@ class Sliders {
 
   Sliders(
       {this.heading1,
-        this.heading2,
-        this.heading3,
-        this.heading4,
-        this.sliderImage});
+      this.heading2,
+      this.heading3,
+      this.heading4,
+      this.sliderImage});
 
   Sliders.fromJson(Map<String, dynamic> json) {
     heading1 = json['heading1'];

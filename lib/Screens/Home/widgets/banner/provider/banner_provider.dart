@@ -12,7 +12,8 @@ class BannerProvider with ChangeNotifier {
     ),
     BannerModel(
       productName: 'Luxury bag',
-      productDescription: 'Pieces of art that are crafted using high-quality materials',
+      productDescription:
+          'Pieces of art that are crafted using high-quality materials',
       productPrice: '4150',
       buyNowButton: 'Buy Now',
       productImage: 'assets/images/product2.png',
@@ -26,7 +27,8 @@ class BannerProvider with ChangeNotifier {
     ),
     BannerModel(
       productName: 'Nike Runner',
-      productDescription: 'Footwear intended to protect and comfort the human foot',
+      productDescription:
+          'Footwear intended to protect and comfort the human foot',
       productPrice: '25500',
       buyNowButton: 'Buy Now',
       productImage: 'assets/images/nike_runner.png',

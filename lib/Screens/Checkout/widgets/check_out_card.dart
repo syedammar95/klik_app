@@ -39,7 +39,11 @@ class CheckOutCard extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Icon(Icons.collections, size: 16.h,color: AppColors.greyColor,),
+                    Icon(
+                      Icons.collections,
+                      size: 16.h,
+                      color: AppColors.greyColor,
+                    ),
                     SizedBox(width: 6.w),
                     Text(
                       shippedBy,
@@ -49,7 +53,11 @@ class CheckOutCard extends StatelessWidget {
                       ),
                     ),
                     SizedBox(width: 6.w),
-                    Icon(Icons.info_outlined, size: 16.h,color: AppColors.greyColor,),
+                    Icon(
+                      Icons.info_outlined,
+                      size: 16.h,
+                      color: AppColors.greyColor,
+                    ),
                   ],
                 ),
                 SizedBox(height: 4.h),
@@ -118,10 +126,9 @@ class CheckOutCard extends StatelessWidget {
                                   Text(
                                     'Qty:',
                                     style: TextStyle(
-                                      fontSize: 12.sp,
-                                      fontWeight: FontWeight.bold,
-                                      color: AppColors.blackColor
-                                    ),
+                                        fontSize: 12.sp,
+                                        fontWeight: FontWeight.bold,
+                                        color: AppColors.blackColor),
                                   ),
                                   SizedBox(width: 2.w),
                                   Text(
@@ -147,9 +154,7 @@ class CheckOutCard extends StatelessWidget {
                     Text(
                       'Delivery Option',
                       style: TextStyle(
-                        fontSize: 12.sp,
-                        color: AppColors.blackColor
-                      ),
+                          fontSize: 12.sp, color: AppColors.blackColor),
                     ),
                     Row(
                       children: [
@@ -161,7 +166,8 @@ class CheckOutCard extends StatelessWidget {
                           ),
                         ),
                         SizedBox(width: 2.w),
-                        const Icon(Icons.arrow_forward_ios_rounded, size: 12, color: AppColors.blackColor),
+                        const Icon(Icons.arrow_forward_ios_rounded,
+                            size: 12, color: AppColors.blackColor),
                       ],
                     ),
                   ],
@@ -206,7 +212,8 @@ class CheckOutCard extends StatelessWidget {
                             SizedBox(height: 8.h),
                             Row(
                               children: [
-                                const Icon(Icons.local_shipping, size: 14, color: AppColors.greenColor),
+                                const Icon(Icons.local_shipping,
+                                    size: 14, color: AppColors.greenColor),
                                 SizedBox(width: 4.w),
                                 Text(
                                   'Guaranteed by 23-26 Jan',

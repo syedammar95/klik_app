@@ -16,7 +16,10 @@ class ContactUs extends StatelessWidget {
           style: TextStyle(fontSize: 16.sp, color: AppColors.whiteColor),
         ),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new_rounded, color: AppColors.whiteColor,),
+          icon: const Icon(
+            Icons.arrow_back_ios_new_rounded,
+            color: AppColors.whiteColor,
+          ),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -45,11 +48,13 @@ class ContactUs extends StatelessWidget {
                     children: [
                       TextSpan(
                         text: 'Full Name ',
-                        style: TextStyle(color: AppColors.greyColor, fontSize: 13.sp),
+                        style: TextStyle(
+                            color: AppColors.greyColor, fontSize: 13.sp),
                       ),
                       TextSpan(
                         text: '*',
-                        style: TextStyle(color: AppColors.greyColor, fontSize: 13.sp),
+                        style: TextStyle(
+                            color: AppColors.greyColor, fontSize: 13.sp),
                       ),
                     ],
                   ),
@@ -63,14 +68,16 @@ class ContactUs extends StatelessWidget {
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10.0),
-                  borderSide: BorderSide(color: AppColors.secondaryColor, width: 1.w),
+                  borderSide:
+                      BorderSide(color: AppColors.secondaryColor, width: 1.w),
                 ),
                 prefixIcon: Icon(
                   Icons.person,
                   color: AppColors.greyColor,
                   size: 20.h,
                 ),
-                contentPadding: EdgeInsets.symmetric(vertical: 8.h, horizontal: 12.w),
+                contentPadding:
+                    EdgeInsets.symmetric(vertical: 8.h, horizontal: 12.w),
               ),
             ),
             SizedBox(height: 15.h),
@@ -82,11 +89,13 @@ class ContactUs extends StatelessWidget {
                     children: [
                       TextSpan(
                         text: 'Email ',
-                        style: TextStyle(color: AppColors.greyColor, fontSize: 13.sp),
+                        style: TextStyle(
+                            color: AppColors.greyColor, fontSize: 13.sp),
                       ),
                       TextSpan(
                         text: '*',
-                        style: TextStyle(color: AppColors.greyColor, fontSize: 13.sp),
+                        style: TextStyle(
+                            color: AppColors.greyColor, fontSize: 13.sp),
                       ),
                     ],
                   ),
@@ -100,10 +109,16 @@ class ContactUs extends StatelessWidget {
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10.0),
-                  borderSide: BorderSide(color: AppColors.secondaryColor, width: 1.w),
+                  borderSide:
+                      BorderSide(color: AppColors.secondaryColor, width: 1.w),
                 ),
-                prefixIcon: Icon(Icons.email, color: AppColors.greyColor, size: 20.h,),
-                contentPadding: EdgeInsets.symmetric(vertical: 8.h, horizontal: 12.w),
+                prefixIcon: Icon(
+                  Icons.email,
+                  color: AppColors.greyColor,
+                  size: 20.h,
+                ),
+                contentPadding:
+                    EdgeInsets.symmetric(vertical: 8.h, horizontal: 12.w),
               ),
               obscureText: true,
             ),
@@ -116,11 +131,13 @@ class ContactUs extends StatelessWidget {
                     children: [
                       TextSpan(
                         text: '+92 |   Enter Mobile Number ',
-                        style: TextStyle(color: AppColors.greyColor, fontSize: 13.sp),
+                        style: TextStyle(
+                            color: AppColors.greyColor, fontSize: 13.sp),
                       ),
                       TextSpan(
                         text: '*',
-                        style: TextStyle(color: AppColors.greyColor, fontSize: 13.sp),
+                        style: TextStyle(
+                            color: AppColors.greyColor, fontSize: 13.sp),
                       ),
                     ],
                   ),
@@ -134,10 +151,16 @@ class ContactUs extends StatelessWidget {
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10.r),
-                  borderSide: BorderSide(color: AppColors.secondaryColor, width: 1.5.w),
+                  borderSide:
+                      BorderSide(color: AppColors.secondaryColor, width: 1.5.w),
                 ),
-                prefixIcon: Icon(Icons.phone, color: AppColors.greyColor, size: 20.h,),
-                contentPadding: EdgeInsets.symmetric(vertical: 8.h, horizontal: 12.w),
+                prefixIcon: Icon(
+                  Icons.phone,
+                  color: AppColors.greyColor,
+                  size: 20.h,
+                ),
+                contentPadding:
+                    EdgeInsets.symmetric(vertical: 8.h, horizontal: 12.w),
               ),
               obscureText: true,
             ),
@@ -150,11 +173,13 @@ class ContactUs extends StatelessWidget {
                     children: [
                       TextSpan(
                         text: 'Subject ',
-                        style: TextStyle(color: AppColors.greyColor, fontSize: 13.sp),
+                        style: TextStyle(
+                            color: AppColors.greyColor, fontSize: 13.sp),
                       ),
                       TextSpan(
                         text: '*',
-                        style: TextStyle(color: AppColors.greyColor, fontSize: 13.sp),
+                        style: TextStyle(
+                            color: AppColors.greyColor, fontSize: 13.sp),
                       ),
                     ],
                   ),
@@ -168,9 +193,11 @@ class ContactUs extends StatelessWidget {
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10.r),
-                  borderSide: BorderSide(color: AppColors.secondaryColor, width: 1.w),
+                  borderSide:
+                      BorderSide(color: AppColors.secondaryColor, width: 1.w),
                 ),
-                contentPadding: EdgeInsets.symmetric(vertical: 8.h, horizontal: 12.w),
+                contentPadding:
+                    EdgeInsets.symmetric(vertical: 8.h, horizontal: 12.w),
               ),
               obscureText: true,
             ),
@@ -183,11 +210,13 @@ class ContactUs extends StatelessWidget {
                     children: [
                       TextSpan(
                         text: 'Message ',
-                        style: TextStyle(color: AppColors.greyColor, fontSize: 13.sp),
+                        style: TextStyle(
+                            color: AppColors.greyColor, fontSize: 13.sp),
                       ),
                       TextSpan(
                         text: '*',
-                        style: TextStyle(color: AppColors.greyColor, fontSize: 13.sp),
+                        style: TextStyle(
+                            color: AppColors.greyColor, fontSize: 13.sp),
                       ),
                     ],
                   ),
@@ -201,9 +230,11 @@ class ContactUs extends StatelessWidget {
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10.r),
-                  borderSide: BorderSide(color: AppColors.secondaryColor, width: 1.5.w),
+                  borderSide:
+                      BorderSide(color: AppColors.secondaryColor, width: 1.5.w),
                 ),
-                contentPadding: EdgeInsets.symmetric(vertical: 8.h, horizontal: 12.w),
+                contentPadding:
+                    EdgeInsets.symmetric(vertical: 8.h, horizontal: 12.w),
               ),
               obscureText: true,
             ),
@@ -222,7 +253,8 @@ class ContactUs extends StatelessWidget {
                 onPressed: () {},
                 child: Text(
                   'Send Request',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14.sp),
+                  style:
+                      TextStyle(fontWeight: FontWeight.bold, fontSize: 14.sp),
                 ),
               ),
             ),

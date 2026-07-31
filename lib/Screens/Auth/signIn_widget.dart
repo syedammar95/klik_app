@@ -97,7 +97,7 @@ class SignInWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(isTablet ? 12.r : 8.r),
         boxShadow: [
           BoxShadow(
-            color: AppColors.greenColor.withOpacity(0.1),
+            color: AppColors.greenColor.withValues(alpha: 0.1),
             blurRadius: 8,
             offset: const Offset(0, 2),
           ),
@@ -145,13 +145,13 @@ class SignInWidget extends StatelessWidget {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              AppColors.primaryColor.withOpacity(0.15),
-              AppColors.primaryColor.withOpacity(0.08),
+              AppColors.primaryColor.withValues(alpha: 0.15),
+              AppColors.primaryColor.withValues(alpha: 0.08),
             ],
           ),
           boxShadow: [
             BoxShadow(
-              color: AppColors.primaryColor.withOpacity(0.1),
+              color: AppColors.primaryColor.withValues(alpha: 0.1),
               blurRadius: 12,
               offset: const Offset(0, 4),
             ),
@@ -177,7 +177,7 @@ class SignInWidget extends StatelessWidget {
               Container(
                 width: 1.w,
                 height: containerHeight * 0.6,
-                color: AppColors.primaryColor.withOpacity(0.3),
+                color: AppColors.primaryColor.withValues(alpha: 0.3),
               ),
               Expanded(
                 child: _buildOfferItem(
@@ -209,7 +209,7 @@ class SignInWidget extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(isTablet ? 8.w : 6.w),
               decoration: BoxDecoration(
-                color: AppColors.primaryColor.withOpacity(0.1),
+                color: AppColors.primaryColor.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(isTablet ? 8.r : 6.r),
               ),
               child: Icon(
@@ -279,7 +279,7 @@ class SignInWidget extends StatelessWidget {
             _buildGuestButton(isTablet, isLargeScreen, () {
               Navigator.pushReplacement(
                 context,
-                MaterialPageRoute(builder: (context) => DashboardPage()),
+                MaterialPageRoute(builder: (context) => const DashboardPage()),
               );
             }),
           ],
@@ -306,7 +306,7 @@ class SignInWidget extends StatelessWidget {
           foregroundColor: AppColors.whiteColor,
           backgroundColor: color,
           elevation: 4,
-          shadowColor: color.withOpacity(0.3),
+          shadowColor: color.withValues(alpha: 0.3),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(isTablet ? 16.r : 12.r),
           ),
@@ -344,7 +344,7 @@ class SignInWidget extends StatelessWidget {
         style: OutlinedButton.styleFrom(
           foregroundColor: AppColors.blackColor,
           side: BorderSide(
-            color: AppColors.greyColor.withOpacity(0.5),
+            color: AppColors.greyColor.withValues(alpha: 0.5),
             width: 1.5,
           ),
           shape: RoundedRectangleBorder(
@@ -369,7 +369,7 @@ class SignInWidget extends StatelessWidget {
       children: [
         Expanded(
           child: Divider(
-            color: AppColors.greyColor.withOpacity(0.3),
+            color: AppColors.greyColor.withValues(alpha: 0.3),
             thickness: 1,
           ),
         ),
@@ -396,7 +396,7 @@ class SignInWidget extends StatelessWidget {
         ),
         Expanded(
           child: Divider(
-            color: AppColors.greyColor.withOpacity(0.3),
+            color: AppColors.greyColor.withValues(alpha: 0.3),
             thickness: 1,
           ),
         ),
@@ -413,10 +413,10 @@ class SignInWidget extends StatelessWidget {
         vertical: isTablet ? 16.h : 12.h,
       ),
       decoration: BoxDecoration(
-        color: AppColors.greyColor.withOpacity(0.05),
+        color: AppColors.greyColor.withValues(alpha: 0.05),
         borderRadius: BorderRadius.circular(isTablet ? 12.r : 8.r),
         border: Border.all(
-          color: AppColors.greyColor.withOpacity(0.1),
+          color: AppColors.greyColor.withValues(alpha: 0.1),
           width: 1,
         ),
       ),

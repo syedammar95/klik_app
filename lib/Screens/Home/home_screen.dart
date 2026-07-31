@@ -38,15 +38,16 @@ class _HomeScreenState extends State<HomeScreen> {
   /// **Builds AppBar with a Search Bar**
   AppBar _buildAppBar(BuildContext context) {
     return AppBar(
-        backgroundColor: AppColors.primaryColor,
-        elevation: 0,
-        automaticallyImplyLeading: false,
-        centerTitle: true,
-        title: const CustomSearchBar(),
+      backgroundColor: AppColors.primaryColor,
+      elevation: 0,
+      automaticallyImplyLeading: false,
+      centerTitle: true,
+      title: const CustomSearchBar(),
       actions: [
         Padding(
           padding: EdgeInsets.only(right: 15.w),
-          child: Icon(Icons.notifications_active,
+          child: Icon(
+            Icons.notifications_active,
             color: AppColors.whiteColor,
             size: 24.sp,
           ),

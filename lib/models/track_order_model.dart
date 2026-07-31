@@ -6,14 +6,14 @@ class TrackOrderModel {
 
   TrackOrderModel.fromJson(Map<String, dynamic> json) {
     success = json['success'];
-    order = json['order'] != null ? new Order.fromJson(json['order']) : null;
+    order = json['order'] != null ? Order.fromJson(json['order']) : null;
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['success'] = this.success;
-    if (this.order != null) {
-      data['order'] = this.order!.toJson();
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['success'] = success;
+    if (order != null) {
+      data['order'] = order!.toJson();
     }
     return data;
   }
@@ -36,18 +36,18 @@ class Order {
 
   Order(
       {this.orderId,
-        this.productId,
-        this.quantity,
-        this.firstName,
-        this.lastName,
-        this.email,
-        this.phone,
-        this.address,
-        this.city,
-        this.state,
-        this.orderStatus,
-        this.orderDate,
-        this.productName});
+      this.productId,
+      this.quantity,
+      this.firstName,
+      this.lastName,
+      this.email,
+      this.phone,
+      this.address,
+      this.city,
+      this.state,
+      this.orderStatus,
+      this.orderDate,
+      this.productName});
 
   Order.fromJson(Map<String, dynamic> json) {
     orderId = json['order_id'];
@@ -66,20 +66,20 @@ class Order {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['order_id'] = this.orderId;
-    data['product_id'] = this.productId;
-    data['quantity'] = this.quantity;
-    data['first_name'] = this.firstName;
-    data['last_name'] = this.lastName;
-    data['email'] = this.email;
-    data['phone'] = this.phone;
-    data['address'] = this.address;
-    data['city'] = this.city;
-    data['state'] = this.state;
-    data['order_status'] = this.orderStatus;
-    data['order_date'] = this.orderDate;
-    data['product_name'] = this.productName;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['order_id'] = orderId;
+    data['product_id'] = productId;
+    data['quantity'] = quantity;
+    data['first_name'] = firstName;
+    data['last_name'] = lastName;
+    data['email'] = email;
+    data['phone'] = phone;
+    data['address'] = address;
+    data['city'] = city;
+    data['state'] = state;
+    data['order_status'] = orderStatus;
+    data['order_date'] = orderDate;
+    data['product_name'] = productName;
     return data;
   }
 }

@@ -26,7 +26,10 @@ class _AddShippingAddressState extends State<AddShippingAddress> {
       appBar: AppBar(
         title: Text(
           'Add Shipping Address',
-          style: TextStyle(fontSize: 18.sp, color: AppColors.whiteColor, fontWeight: FontWeight.bold),
+          style: TextStyle(
+              fontSize: 18.sp,
+              color: AppColors.whiteColor,
+              fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
         backgroundColor: AppColors.primaryColor,
@@ -38,16 +41,20 @@ class _AddShippingAddressState extends State<AddShippingAddress> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _buildInputField("Recipient's Name", nameController, "Input the real name"),
-            _buildInputField("Phone Number", phoneController, "Input Phone Number"),
-            _buildInputField("Region/City/District", cityController, "Input Region/City/District"),
-            _buildInputField("Address", addressController, "House no./building/street/area"),
-            _buildInputField("Landmark (Optional)", landmarkController, "Add Additional Info", isRequired: false),
-
+            _buildInputField(
+                "Recipient's Name", nameController, "Input the real name"),
+            _buildInputField(
+                "Phone Number", phoneController, "Input Phone Number"),
+            _buildInputField("Region/City/District", cityController,
+                "Input Region/City/District"),
+            _buildInputField(
+                "Address", addressController, "House no./building/street/area"),
+            _buildInputField("Landmark (Optional)", landmarkController,
+                "Add Additional Info",
+                isRequired: false),
             SizedBox(height: 8.h),
             _buildAddressCategory(),
             _buildDefaultAddressToggle(),
-
             SizedBox(height: 20.h),
             _buildSaveButton(),
           ],
@@ -56,7 +63,9 @@ class _AddShippingAddressState extends State<AddShippingAddress> {
     );
   }
 
-  Widget _buildInputField(String label, TextEditingController controller, String hint, {bool isRequired = true}) {
+  Widget _buildInputField(
+      String label, TextEditingController controller, String hint,
+      {bool isRequired = true}) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -65,7 +74,10 @@ class _AddShippingAddressState extends State<AddShippingAddress> {
             children: [
               TextSpan(
                 text: label,
-                style: TextStyle(color: AppColors.blackColor, fontSize: 12.sp, fontWeight: FontWeight.w600),
+                style: TextStyle(
+                    color: AppColors.blackColor,
+                    fontSize: 12.sp,
+                    fontWeight: FontWeight.w600),
               ),
               if (isRequired)
                 TextSpan(
@@ -82,16 +94,19 @@ class _AddShippingAddressState extends State<AddShippingAddress> {
           decoration: InputDecoration(
             hintText: hint,
             hintStyle: TextStyle(fontSize: 12.sp, color: AppColors.greyColor),
-            border: OutlineInputBorder(borderRadius: BorderRadius.circular(10.r)),
+            border:
+                OutlineInputBorder(borderRadius: BorderRadius.circular(10.r)),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10.r),
               borderSide: BorderSide(color: AppColors.greyColor, width: 1.5.w),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10.r),
-              borderSide: BorderSide(color: AppColors.secondaryColor, width: 1.5.w),
+              borderSide:
+                  BorderSide(color: AppColors.secondaryColor, width: 1.5.w),
             ),
-            contentPadding: EdgeInsets.symmetric(vertical: 4.h, horizontal: 12.w),
+            contentPadding:
+                EdgeInsets.symmetric(vertical: 4.h, horizontal: 12.w),
           ),
         ),
         SizedBox(height: 8.h),
@@ -103,7 +118,8 @@ class _AddShippingAddressState extends State<AddShippingAddress> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Address Category', style: TextStyle(color: AppColors.blackColor, fontSize: 12.sp)),
+        Text('Address Category',
+            style: TextStyle(color: AppColors.blackColor, fontSize: 12.sp)),
         Row(
           children: [
             _buildCheckbox("Home", isHomeSelected, (value) {
@@ -128,15 +144,19 @@ class _AddShippingAddressState extends State<AddShippingAddress> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text('Default Shipping Address', style: TextStyle(color: AppColors.blackColor, fontSize: 12.sp, fontWeight: FontWeight.bold)),
+        Text('Default Shipping Address',
+            style: TextStyle(
+                color: AppColors.blackColor,
+                fontSize: 12.sp,
+                fontWeight: FontWeight.bold)),
         Switch(
           value: isDefaultAddress,
-          activeColor: AppColors.blackColor,
+          activeThumbColor: AppColors.blackColor,
           // thumbColor: WidgetStatePropertyAll(AppColors.whiteColor),
           inactiveThumbColor: AppColors.blackColor,
           inactiveTrackColor: AppColors.secondaryColor,
           activeTrackColor: AppColors.secondaryColor,
-          trackOutlineColor: WidgetStatePropertyAll(AppColors.whiteColor),
+          trackOutlineColor: const WidgetStatePropertyAll(AppColors.whiteColor),
           onChanged: (value) {
             setState(() {
               isDefaultAddress = value;
@@ -153,10 +173,12 @@ class _AddShippingAddressState extends State<AddShippingAddress> {
         Checkbox(
           value: value,
           activeColor: AppColors.primaryColor,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18.r)),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(18.r)),
           onChanged: onChanged,
         ),
-        Text(label, style: TextStyle(color: AppColors.blackColor, fontSize: 12.sp)),
+        Text(label,
+            style: TextStyle(color: AppColors.blackColor, fontSize: 12.sp)),
       ],
     );
   }
@@ -166,13 +188,18 @@ class _AddShippingAddressState extends State<AddShippingAddress> {
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primaryColor,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.r)),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.r)),
           padding: EdgeInsets.symmetric(vertical: 12.h, horizontal: 40.w),
         ),
         onPressed: () {
           _saveAddress();
         },
-        child: Text("Save Address", style: TextStyle(color: Colors.white, fontSize: 14.sp, fontWeight: FontWeight.bold)),
+        child: Text("Save Address",
+            style: TextStyle(
+                color: Colors.white,
+                fontSize: 14.sp,
+                fontWeight: FontWeight.bold)),
       ),
     );
   }

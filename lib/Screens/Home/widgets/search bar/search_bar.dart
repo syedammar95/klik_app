@@ -34,9 +34,11 @@ class CustomSearchBar extends StatelessWidget {
                     style: TextStyle(fontSize: 12.sp),
                     decoration: InputDecoration(
                       hintText: "Search here",
-                      hintStyle: TextStyle(color: AppColors.greyColor, fontSize: 12.sp),
+                      hintStyle: TextStyle(
+                          color: AppColors.greyColor, fontSize: 12.sp),
                       border: InputBorder.none,
-                      contentPadding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.5.h),
+                      contentPadding: EdgeInsets.symmetric(
+                          horizontal: 10.w, vertical: 10.5.h),
                     ),
                   ),
                 ),
@@ -54,9 +56,13 @@ class CustomSearchBar extends StatelessWidget {
                     ),
                     border: Border.all(color: AppColors.whiteColor, width: 1),
                   ),
-                  child: Center(child: Text('Search',style: TextStyle(fontSize: 12.sp,color: AppColors.whiteColor),)),
+                  child: Center(
+                      child: Text(
+                    'Search',
+                    style:
+                        TextStyle(fontSize: 12.sp, color: AppColors.whiteColor),
+                  )),
                 ),
-
               ],
             ),
           ),

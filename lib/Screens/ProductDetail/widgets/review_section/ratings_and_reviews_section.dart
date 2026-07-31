@@ -114,9 +114,9 @@ class _RatingsAndReviewsSectionState extends State<RatingsAndReviewsSection> {
     return Container(
       padding: EdgeInsets.all(16.w),
       decoration: BoxDecoration(
-        color: AppColors.redColor.withOpacity(0.1),
+        color: AppColors.redColor.withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(8.r),
-        border: Border.all(color: AppColors.redColor.withOpacity(0.3)),
+        border: Border.all(color: AppColors.redColor.withValues(alpha: 0.3)),
       ),
       child: Column(
         children: [
@@ -269,7 +269,7 @@ class _RatingsAndReviewsSectionState extends State<RatingsAndReviewsSection> {
                           child: LinearProgressIndicator(
                             value: percentage / 100,
                             backgroundColor:
-                                AppColors.lightGreyColor.withOpacity(0.3),
+                                AppColors.lightGreyColor.withValues(alpha: 0.3),
                             valueColor: const AlwaysStoppedAnimation<Color>(
                                 AppColors.yellowColor),
                             minHeight: 6.h,
@@ -327,12 +327,10 @@ class _RatingsAndReviewsSectionState extends State<RatingsAndReviewsSection> {
           ),
         ),
         SizedBox(height: 12.h),
-        ...previewReviews
-            .map((review) => Padding(
-                  padding: EdgeInsets.only(bottom: 12.h),
-                  child: ReviewItemWidget(review: review),
-                ))
-            .toList(),
+        ...previewReviews.map((review) => Padding(
+              padding: EdgeInsets.only(bottom: 12.h),
+              child: ReviewItemWidget(review: review),
+            )),
       ],
     );
   }
@@ -359,7 +357,7 @@ class _RatingsAndReviewsSectionState extends State<RatingsAndReviewsSection> {
         gradient: LinearGradient(
           colors: [
             AppColors.primaryColor,
-            AppColors.primaryColor.withOpacity(0.8),
+            AppColors.primaryColor.withValues(alpha: 0.8),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
@@ -367,7 +365,7 @@ class _RatingsAndReviewsSectionState extends State<RatingsAndReviewsSection> {
         borderRadius: BorderRadius.circular(12.r),
         boxShadow: [
           BoxShadow(
-            color: AppColors.primaryColor.withOpacity(0.3),
+            color: AppColors.primaryColor.withValues(alpha: 0.3),
             blurRadius: 8,
             offset: const Offset(0, 4),
           ),
@@ -386,7 +384,7 @@ class _RatingsAndReviewsSectionState extends State<RatingsAndReviewsSection> {
                   width: 24.w,
                   height: 24.w,
                   decoration: BoxDecoration(
-                    color: AppColors.whiteColor.withOpacity(0.2),
+                    color: AppColors.whiteColor.withValues(alpha: 0.2),
                     borderRadius: BorderRadius.circular(12.r),
                   ),
                   child: Icon(
@@ -432,7 +430,7 @@ class _RatingsAndReviewsSectionState extends State<RatingsAndReviewsSection> {
             ),
             boxShadow: [
               BoxShadow(
-                color: AppColors.primaryColor.withOpacity(0.1),
+                color: AppColors.primaryColor.withValues(alpha: 0.1),
                 blurRadius: 4,
                 offset: const Offset(0, 2),
               ),
@@ -461,7 +459,7 @@ class _RatingsAndReviewsSectionState extends State<RatingsAndReviewsSection> {
                       width: 24.w,
                       height: 24.w,
                       decoration: BoxDecoration(
-                        color: AppColors.primaryColor.withOpacity(0.1),
+                        color: AppColors.primaryColor.withValues(alpha: 0.1),
                         borderRadius: BorderRadius.circular(12.r),
                       ),
                       child: Icon(

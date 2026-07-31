@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../constants/app_colors.dart';
@@ -29,9 +28,9 @@ class FeedBackTextField extends StatelessWidget {
       cursorColor: AppColors.primaryColor,
       decoration: InputDecoration(
         labelText: label,
-        labelStyle: TextStyle(color: AppColors.primaryColor),
-        border: OutlineInputBorder(),
-        focusedBorder: OutlineInputBorder(
+        labelStyle: const TextStyle(color: AppColors.primaryColor),
+        border: const OutlineInputBorder(),
+        focusedBorder: const OutlineInputBorder(
           borderSide: BorderSide(color: Colors.grey),
         ),
       ),

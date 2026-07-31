@@ -46,7 +46,10 @@ class MessagePage01 extends StatelessWidget {
                       text: "Chats",
                       textSize: 11.sp,
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> const Chat01()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Chat01()));
                       },
                     ),
                     ChatsIconRoundItem(
@@ -57,7 +60,10 @@ class MessagePage01 extends StatelessWidget {
                       text: "Orders",
                       textSize: 11.sp,
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> const OrdersScreen()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const OrdersScreen()));
                       },
                     ),
                     ChatsIconRoundItem(
@@ -68,7 +74,10 @@ class MessagePage01 extends StatelessWidget {
                       text: "Activities",
                       textSize: 11.sp,
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> const Activities01()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Activities01()));
                       },
                     ),
                     ChatsIconRoundItem(
@@ -79,7 +88,10 @@ class MessagePage01 extends StatelessWidget {
                       text: "Promos",
                       textSize: 11.sp,
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> const Promos01()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Promos01()));
                       },
                     ),
                   ],
@@ -93,14 +105,16 @@ class MessagePage01 extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text('Last 7 days', style: TextStyle(color: Colors.grey)),
+                  const Text('Last 7 days',
+                      style: TextStyle(color: Colors.grey)),
                   SizedBox(height: 8.h),
                   OrdersPageItem(
                     firstText: 'Order Cancellation',
                     secondText: '1 minute ago',
                     leftIcon: Icons.credit_card,
                     secondImage: "assets/images/img.png",
-                    longText: "Dear customer, we're sorry that your order has been cancelled. Please tap here to find the",
+                    longText:
+                        "Dear customer, we're sorry that your order has been cancelled. Please tap here to find the",
                     orderId: "5627657626552676",
                     onTap: () {},
                   ),
@@ -110,7 +124,8 @@ class MessagePage01 extends StatelessWidget {
                     secondText: '1 minute ago',
                     leftIcon: Icons.credit_card,
                     secondImage: "assets/images/img.png",
-                    longText: "Dear customer, we're sorry that your order has been cancelled. Please tap here to find the",
+                    longText:
+                        "Dear customer, we're sorry that your order has been cancelled. Please tap here to find the",
                     orderId: "5627657626552676",
                     onTap: () {},
                   ),
@@ -120,7 +135,8 @@ class MessagePage01 extends StatelessWidget {
                     secondText: '1 minute ago',
                     leftIcon: Icons.credit_card,
                     secondImage: "assets/images/img.png",
-                    longText: "Dear customer, we're sorry that your order has been cancelled. Please tap here to find the",
+                    longText:
+                        "Dear customer, we're sorry that your order has been cancelled. Please tap here to find the",
                     orderId: "5627657626552676",
                     onTap: () {},
                   ),
@@ -130,7 +146,8 @@ class MessagePage01 extends StatelessWidget {
                     secondText: '1 minute ago',
                     leftIcon: Icons.credit_card,
                     secondImage: "assets/images/img.png",
-                    longText: "Dear customer, we're sorry that your order has been cancelled. Please tap here to find the",
+                    longText:
+                        "Dear customer, we're sorry that your order has been cancelled. Please tap here to find the",
                     orderId: "5627657626552676",
                     onTap: () {},
                   ),

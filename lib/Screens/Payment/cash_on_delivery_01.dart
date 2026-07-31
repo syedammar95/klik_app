@@ -16,7 +16,8 @@ class CashOnDelivery01 extends StatelessWidget {
           style: TextStyle(fontSize: 16.sp, color: Colors.white),
         ),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white),
+          icon:
+              const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -34,7 +35,8 @@ class CashOnDelivery01 extends StatelessWidget {
               child: Container(
                 color: Colors.blue.shade100,
                 child: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 6.h, horizontal: 12.w),
+                  padding:
+                      EdgeInsets.symmetric(vertical: 6.h, horizontal: 12.w),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -46,7 +48,8 @@ class CashOnDelivery01 extends StatelessWidget {
                           'Please collect bank vouchers to avail bank discounts and mega deals/flash sales',
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
-                          style: TextStyle(fontSize: 11.sp, color: Colors.blue[900]),
+                          style: TextStyle(
+                              fontSize: 11.sp, color: Colors.blue[900]),
                         ),
                       ),
                     ],
@@ -57,12 +60,13 @@ class CashOnDelivery01 extends StatelessWidget {
             Container(
               color: Colors.white,
               child: Padding(
-                padding: EdgeInsets.symmetric( horizontal: 12.w, vertical: 10.h),
+                padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 10.h),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Icon(FontAwesomeIcons.ccVisa, size: 22.sp, color: AppColors.primaryColor),
+                    Icon(FontAwesomeIcons.ccVisa,
+                        size: 22.sp, color: AppColors.primaryColor),
                     SizedBox(width: 2.w),
                     Expanded(
                       child: Padding(
@@ -131,7 +135,9 @@ class CashOnDelivery01 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text('Subtotal', style: TextStyle(fontSize: 12.sp)),
-                  Text('\$100', style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold)),
+                  Text('\$100',
+                      style: TextStyle(
+                          fontSize: 12.sp, fontWeight: FontWeight.bold)),
                 ],
               ),
               SizedBox(height: 12.h),
@@ -139,7 +145,11 @@ class CashOnDelivery01 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text('Cash payment fee', style: TextStyle(fontSize: 12.sp)),
-                  Text('\$10', style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold, color: AppColors.primaryColor)),
+                  Text('\$10',
+                      style: TextStyle(
+                          fontSize: 12.sp,
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.primaryColor)),
                 ],
               ),
               SizedBox(height: 12.h),
@@ -147,7 +157,11 @@ class CashOnDelivery01 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text('Total Amount', style: TextStyle(fontSize: 13.sp)),
-                  Text('\$100', style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.bold, color: AppColors.primaryColor)),
+                  Text('\$100',
+                      style: TextStyle(
+                          fontSize: 13.sp,
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.primaryColor)),
                 ],
               ),
               SizedBox(height: 4.h),
@@ -167,7 +181,8 @@ class CashOnDelivery01 extends StatelessWidget {
                   onPressed: () {},
                   child: Text(
                     'Confirm Order',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13.sp),
+                    style:
+                        TextStyle(fontWeight: FontWeight.bold, fontSize: 13.sp),
                   ),
                 ),
               ),

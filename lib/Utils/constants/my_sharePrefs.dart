@@ -349,7 +349,7 @@ class MySharedPrefs {
     }
 
     // ✅ Also check all_products_cache_time
-    final allProductsTimeKey = 'all_products_cache_time';
+    const allProductsTimeKey = 'all_products_cache_time';
     final allProductsTime = prefs?.getString(allProductsTimeKey);
     if (allProductsTime != null) {
       try {

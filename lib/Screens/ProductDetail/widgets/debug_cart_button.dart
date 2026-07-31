@@ -41,7 +41,7 @@ class DebugCartButton extends StatelessWidget {
                 padding: EdgeInsets.all(8.w),
                 margin: EdgeInsets.only(bottom: 8.h),
                 decoration: BoxDecoration(
-                  color: AppColors.greyColor.withOpacity(0.1),
+                  color: AppColors.greyColor.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(8.r),
                 ),
                 child: Column(
@@ -126,7 +126,7 @@ class DebugCartButton extends StatelessWidget {
           ? SizedBox(
               height: 20.h,
               width: 20.w,
-              child: CircularProgressIndicator(
+              child: const CircularProgressIndicator(
                 strokeWidth: 2,
                 valueColor: AlwaysStoppedAnimation<Color>(AppColors.whiteColor),
               ),

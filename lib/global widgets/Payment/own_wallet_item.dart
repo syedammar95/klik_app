@@ -43,7 +43,8 @@ class OwnWalletItem extends StatelessWidget {
                 children: [
                   Text(
                     firstText,
-                    style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.bold),
+                    style:
+                        TextStyle(fontSize: 13.sp, fontWeight: FontWeight.bold),
                   ),
                   Text(
                     secondText,

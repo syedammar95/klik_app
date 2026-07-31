@@ -60,6 +60,7 @@ dependencies:
 
   # Network Connectivity (using native Dart networking)
 
+  http: any
 dev_dependencies:
   flutter_test:
     sdk: flutter

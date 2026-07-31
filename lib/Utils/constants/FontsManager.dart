@@ -40,4 +40,3 @@ class MyFonts {
   static double size48 = 48;
   static double size87 = 87;
 }
-

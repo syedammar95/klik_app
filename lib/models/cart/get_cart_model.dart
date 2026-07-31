@@ -9,16 +9,16 @@ class GetCartModel {
     if (json['cart'] != null) {
       cart = <CartModel>[];
       json['cart'].forEach((v) {
-        cart!.add(new CartModel.fromJson(v));
+        cart!.add(CartModel.fromJson(v));
       });
     }
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['success'] = this.success;
-    if (this.cart != null) {
-      data['cart'] = this.cart!.map((v) => v.toJson()).toList();
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['success'] = success;
+    if (cart != null) {
+      data['cart'] = cart!.map((v) => v.toJson()).toList();
     }
     return data;
   }
@@ -69,19 +69,19 @@ class CartModel {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['user_id'] = this.userId;
-    data['product_id'] = this.productId;
-    data['variation_id'] = this.variationId;
-    data['quantity'] = this.quantity;
-    data['discount_price'] = this.discountPrice;
-    data['price'] = this.price;
-    data['total_price'] = this.totalPrice;
-    data['product_name'] = this.productName;
-    data['variation_name'] = this.variationName;
-    data['variation_value'] = this.variationValue;
-    data['image_url'] = this.imageUrl;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['id'] = id;
+    data['user_id'] = userId;
+    data['product_id'] = productId;
+    data['variation_id'] = variationId;
+    data['quantity'] = quantity;
+    data['discount_price'] = discountPrice;
+    data['price'] = price;
+    data['total_price'] = totalPrice;
+    data['product_name'] = productName;
+    data['variation_name'] = variationName;
+    data['variation_value'] = variationValue;
+    data['image_url'] = imageUrl;
     return data;
   }
 
@@ -129,7 +129,7 @@ class CartModel {
 
     // Convert webp to jpg if needed
     if (cleanUrl.toLowerCase().endsWith('.webp')) {
-      cleanUrl = cleanUrl.substring(0, cleanUrl.length - 5) + '.jpg';
+      cleanUrl = '${cleanUrl.substring(0, cleanUrl.length - 5)}.jpg';
     }
 
     // Ensure URL starts with http

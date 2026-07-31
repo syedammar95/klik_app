@@ -48,13 +48,13 @@ class ChatListItem extends StatelessWidget {
                   ),
                   child: leftImage != null
                       ? ClipOval(
-                    child: Image.asset(
-                      leftImage!,
-                      fit: BoxFit.contain,
-                      width: 40.w,
-                      height: 40.h,
-                    ),
-                  )
+                          child: Image.asset(
+                            leftImage!,
+                            fit: BoxFit.contain,
+                            width: 40.w,
+                            height: 40.h,
+                          ),
+                        )
                       : null,
                 ),
                 SizedBox(width: 10.w),
@@ -64,7 +64,8 @@ class ChatListItem extends StatelessWidget {
                   children: [
                     Text(
                       firstText,
-                      style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 13.sp, fontWeight: FontWeight.bold),
                     ),
                     if (isSecondTextVisible)
                       Text(

@@ -18,7 +18,10 @@ class Chat01 extends StatelessWidget {
           style: TextStyle(fontSize: 16.sp, color: Colors.white),
         ),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white,),
+          icon: const Icon(
+            Icons.arrow_back_ios_new_rounded,
+            color: Colors.white,
+          ),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -41,7 +44,10 @@ class Chat01 extends StatelessWidget {
                     secondText: '29/10/2024',
                     leftImage: "assets/images/chat_pic.png",
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=> const Chat02()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Chat02()));
                     },
                   ),
                 ],

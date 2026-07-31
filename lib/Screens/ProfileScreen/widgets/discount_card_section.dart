@@ -15,19 +15,24 @@ class DiscountCardSection extends StatelessWidget {
       child: DiscountOfferCard(
         imageUrl: 'assets/images/product4.png',
         row1Children: [
-          _discountText('END OF SEASON', AppColors.blackColor,fontSize: 10.sp),
-          _discountText(' SALE ', AppColors.redColor,fontSize: 16.sp),
-          _discountText(' Starts: Jan30, ', AppColors.blackColor,fontSize: 10.sp),
-          _discountText('00:00 PT', AppColors.blackColor,fontSize: 10.sp),
+          _discountText('END OF SEASON', AppColors.blackColor, fontSize: 10.sp),
+          _discountText(' SALE ', AppColors.redColor, fontSize: 16.sp),
+          _discountText(' Starts: Jan30, ', AppColors.blackColor,
+              fontSize: 10.sp),
+          _discountText('00:00 PT', AppColors.blackColor, fontSize: 10.sp),
         ],
         row2Children: [
-          _discountText('UpTo', AppColors.blackColor,fontSize: 10.sp),
+          _discountText('UpTo', AppColors.blackColor, fontSize: 10.sp),
           SizedBox(width: 4.w),
           _discountText('60%', AppColors.redColor, fontSize: 33.sp),
           SizedBox(width: 4.w),
           _discountText('OFF', AppColors.redColor, fontSize: 28.sp),
           SizedBox(width: 10.w),
-          Icon(Icons.arrow_circle_right_outlined, size: 20.sp, color: AppColors.blackColor,),
+          Icon(
+            Icons.arrow_circle_right_outlined,
+            size: 20.sp,
+            color: AppColors.blackColor,
+          ),
         ],
       ),
     );

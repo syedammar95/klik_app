@@ -24,7 +24,7 @@ class DynamicProductImage extends StatelessWidget {
       height: height.h,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8.r),
-        color: AppColors.greyColor.withOpacity(0.1),
+        color: AppColors.greyColor.withValues(alpha: 0.1),
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(8.r),
@@ -87,7 +87,7 @@ class DynamicProductImage extends StatelessWidget {
 
   Widget _buildPlaceholder() {
     return Container(
-      color: AppColors.greyColor.withOpacity(0.1),
+      color: AppColors.greyColor.withValues(alpha: 0.1),
       child: Icon(
         Icons.image_not_supported_outlined,
         color: AppColors.greyColor,
@@ -98,12 +98,12 @@ class DynamicProductImage extends StatelessWidget {
 
   Widget _buildLoadingPlaceholder() {
     return Container(
-      color: AppColors.greyColor.withOpacity(0.1),
+      color: AppColors.greyColor.withValues(alpha: 0.1),
       child: Center(
         child: SizedBox(
           width: 16.w,
           height: 16.h,
-          child: CircularProgressIndicator(
+          child: const CircularProgressIndicator(
             strokeWidth: 2,
             valueColor: AlwaysStoppedAnimation<Color>(AppColors.primaryColor),
           ),
@@ -114,7 +114,7 @@ class DynamicProductImage extends StatelessWidget {
 
   Widget _buildErrorPlaceholder() {
     return Container(
-      color: AppColors.greyColor.withOpacity(0.1),
+      color: AppColors.greyColor.withValues(alpha: 0.1),
       child: Icon(
         Icons.broken_image_outlined,
         color: AppColors.greyColor,
