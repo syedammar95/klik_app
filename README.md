@@ -1,6 +1,6 @@
 # klik_app
 
-Developed by IT Genesis
+Developed by IT Syed Ammar
 
 ## Getting Started
 
