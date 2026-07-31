@@ -1,0 +1,2 @@
+C:/Users/Syeda/IdeaProjects/klik_app/android/app/.cxx/RelWithDebInfo/3y6v6v49/x86/CMakeFiles/edit_cache.dir
+C:/Users/Syeda/IdeaProjects/klik_app/android/app/.cxx/RelWithDebInfo/3y6v6v49/x86/CMakeFiles/rebuild_cache.dir
