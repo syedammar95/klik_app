@@ -1,0 +1,58 @@
+name: Flutter QA & Auto-APK Build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  qa_and_build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. GitHub runner par aapka code clone hoga
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      # 2. Java JDK setup (Android apps ke liye lazmi hai)
+      - name: Set up Java Development Kit (JDK)
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      # 3. Flutter Environment setup (Aapki yaml ke mutabiq stable channel)
+      - name: Set up Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      # 4. Project ke saare packages download karna
+      - name: Install dependencies
+        run: flutter pub get
+
+      # 5. QA Automation: Code analysis aur formatting bugs ki checking
+      - name: Run Flutter Analyzer (QA Check)
+        run: flutter analyze
+
+      # 6. Unit Testing: Automated testing commands
+      - name: Run Flutter Unit Tests
+        run: flutter test
+
+      # 7. Firebase Missing Files Bypass (Taake build crash na ho)
+      - name: Bypass Missing Firebase Files
+        run: |
+          mkdir -p android/app
+          echo '{}' > android/app/google-services.json
+
+      # 8. Automatic APK Generation (Release Mode)
+      - name: Build Android APK
+        run: flutter build apk --release
+
+      # 9. Bani hui APK ko GitHub Actions tab par download ke liye attach karna
+      - name: Upload Generated APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: klik-release-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
