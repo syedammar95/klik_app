@@ -6,6 +6,7 @@ import '../../../Utils/app_colors.dart';
 import '../../../models/product/product_model.dart';
 import '../../../Screens/Cart/provider/cart_provider.dart';
 import '../../../Utils/helpers/toast_utils.dart';
+import '../../Auth/email section/provider/email_authProvider.dart';
 
 /// ProductDetailBottomButtons Widget
 /// Displays the bottom action buttons for add to cart and buy now
@@ -88,8 +89,12 @@ class ProductDetailBottomButtons extends StatelessWidget {
         ToastUtils.showSuccess("${product.productName} removed from cart");
       } else {
         // Add to cart
-        await cartProvider.postAddedCart(
-          context,
+        // Avoid passing BuildContext across async gaps by resolving providers before awaiting
+        final authProvider =
+            Provider.of<EmailAuthProvider>(context, listen: false);
+
+        await cartProvider.postAddedCartWithAuth(
+          authProvider,
           product.productId,
           null, // variationId
           1, // quantity
