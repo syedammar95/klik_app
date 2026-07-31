@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => CartProvider()),
       ],
       child: ScreenUtilInit(
-        designSize: const Size(360, 690),
+        designSize: const Size(360, 69),
         minTextAdapt: true,
         splitScreenMode: true,
         builder: (context, child) {
