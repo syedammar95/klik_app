@@ -66,7 +66,7 @@ class HblBank01 extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(FontAwesomeIcons.ccVisa,
+                      Icon(FontAwesomeIcons.ccVisa as IconData?,
                           size: 22.sp, color: AppColors.primaryColor),
                       SizedBox(width: 2.w),
                       Expanded(
@@ -115,7 +115,7 @@ class HblBank01 extends StatelessWidget {
                             children: [
                               Row(
                                 children: [
-                                  Icon(FontAwesomeIcons.ccVisa,
+                                  Icon(FontAwesomeIcons.ccVisa as IconData?,
                                       size: 24.sp,
                                       color: AppColors.primaryColor),
                                   SizedBox(width: 8.w),

@@ -326,11 +326,11 @@ Widget _walletDepositBottomSheet(BuildContext context) {
                 const Spacer(),
                 Row(
                   children: [
-                    Icon(FontAwesomeIcons.ccMastercard, size: 16.sp),
+                    Icon(FontAwesomeIcons.ccMastercard as IconData?, size: 16.sp),
                     SizedBox(width: 6.w),
-                    Icon(FontAwesomeIcons.ccVisa, size: 16.sp),
+                    Icon(FontAwesomeIcons.ccVisa as IconData?, size: 16.sp),
                     SizedBox(width: 6.w),
-                    Icon(FontAwesomeIcons.ccApplePay, size: 16.sp),
+                    Icon(FontAwesomeIcons.ccApplePay as IconData?, size: 16.sp),
                     SizedBox(width: 14.w),
                   ],
                 ),
@@ -621,11 +621,11 @@ Widget _addCreditMethodBottomSheet(BuildContext context) {
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13.sp)),
             Row(
               children: [
-                Icon(FontAwesomeIcons.ccMastercard, size: 18.r),
+                Icon(FontAwesomeIcons.ccMastercard as IconData?, size: 18.r),
                 SizedBox(width: 8.w),
-                Icon(FontAwesomeIcons.ccVisa, size: 18.r),
+                Icon(FontAwesomeIcons.ccVisa as IconData?, size: 18.r),
                 SizedBox(width: 8.w),
-                Icon(FontAwesomeIcons.ccApplePay, size: 18.r),
+                Icon(FontAwesomeIcons.ccApplePay as IconData?, size: 18.r),
               ],
             ),
           ],

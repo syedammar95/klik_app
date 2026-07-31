@@ -65,7 +65,7 @@ class CashOnDelivery01 extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Icon(FontAwesomeIcons.ccVisa,
+                    Icon(FontAwesomeIcons.ccVisa as IconData?,
                         size: 22.sp, color: AppColors.primaryColor),
                     SizedBox(width: 2.w),
                     Expanded(

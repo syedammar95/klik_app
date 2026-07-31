@@ -83,11 +83,11 @@ class CreditDebit01 extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Icon(FontAwesomeIcons.ccMastercard, size: 20.sp),
+                  Icon(FontAwesomeIcons.ccMastercard as IconData?, size: 20.sp),
                   SizedBox(width: 10.w),
-                  Icon(FontAwesomeIcons.ccVisa, size: 20.sp),
+                  Icon(FontAwesomeIcons.ccVisa as IconData?, size: 20.sp),
                   SizedBox(width: 10.w),
-                  Icon(FontAwesomeIcons.ccApplePay, size: 20.sp),
+                  Icon(FontAwesomeIcons.ccApplePay as IconData?, size: 20.sp),
                 ],
               ),
             ),

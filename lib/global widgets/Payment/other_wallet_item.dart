@@ -67,11 +67,11 @@ class OtherWalletItem extends StatelessWidget {
             if (showPaymentIcons)
               Row(
                 children: [
-                  Icon(FontAwesomeIcons.ccMastercard, size: 14.sp),
+                  Icon(FontAwesomeIcons.ccMastercard as IconData?, size: 14.sp),
                   SizedBox(width: 6.w),
-                  Icon(FontAwesomeIcons.ccVisa, size: 14.sp),
+                  Icon(FontAwesomeIcons.ccVisa as IconData?, size: 14.sp),
                   SizedBox(width: 6.w),
-                  Icon(FontAwesomeIcons.ccApplePay, size: 14.sp),
+                  Icon(FontAwesomeIcons.ccApplePay as IconData?, size: 14.sp),
                   SizedBox(width: 10.w),
                 ],
               ),
