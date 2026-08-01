@@ -22,7 +22,7 @@ jobs:
           distribution: 'zulu'
           java-version: '17'
 
-      # 3. Flutter Environment setup (Aapki yaml ke mutabiq stable channel)
+      # 3. Flutter Environment setup
       - name: Set up Flutter SDK
         uses: subosito/flutter-action@v2
         with:
@@ -32,17 +32,17 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      # 5. QA Automation: (FORCE BYPASS) || true lagane se errors par build hargiz nahi rukegi
+      # 5. QA Automation: (FORCE BYPASS)
       - name: Run Flutter Analyzer (QA Check)
         run: flutter analyze || true
         continue-on-error: true
 
-      # 6. Unit Testing: (FORCE BYPASS) Tests fail hone par bhi build chalti rahegi
+      # 6. Unit Testing: (FORCE BYPASS)
       - name: Run Flutter Unit Tests
         run: flutter test || true
         continue-on-error: true
 
-      # 7. Valid Minimal Firebase Structure Configuration (Taake plugin crash na ho)
+      # 7. Valid Minimal Firebase Structure Configuration
       - name: Setup Minimal Valid Firebase Configuration
         run: |
           mkdir -p android/app
@@ -65,7 +65,7 @@ jobs:
           }
           EOF
 
-      # 8. Clean Gradle Server Cache (Fail-proof method agar gradlew file missing ho)
+      # 8. Clean Gradle Server Cache
       - name: Purge & Clean Gradle Build Cache
         run: |
           if [ -f android/gradlew ]; then
@@ -77,13 +77,15 @@ jobs:
             flutter clean
           fi
 
-      # 9. Automatic APK Generation (Release Mode) with Detailed Logging
-      - name: Build Android APK
-        run: flutter build apk --release --verbose
+      # 9. Forced Multi-Platform APK Build (Bypasses hidden AAR lockouts)
+      - name: Build Android APK (Forced Pipeline)
+        run: |
+          flutter pub get
+          flutter build apk --release --target-platform android-arm,android-arm64,android-x64 --split-per-abi || flutter build apk --release --no-pub --verbose
 
       # 10. Bani hui APK ko GitHub Actions tab par download ke liye attach karna
       - name: Upload Generated APK Artifact
         uses: actions/upload-artifact@v4
         with:
           name: klik-release-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: build/app/outputs/flutter-apk/
