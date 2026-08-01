@@ -42,19 +42,44 @@ jobs:
         run: flutter test
         continue-on-error: true
 
-      # 7. Firebase Missing Files Bypass (Taake build crash na ho)
-      - name: Bypass Missing Firebase Files
+      # 7. Valid Minimal Firebase Structure Configuration (Taake plugin crash na ho)
+      - name: Setup Minimal Valid Firebase Configuration
         run: |
           mkdir -p android/app
-          echo '{}' > android/app/google-services.json
+          cat > android/app/google-services.json << 'EOF'
+          {
+            "project_info": {
+              "project_number": "123456789012",
+              "project_id": "klik-app-placeholder-id"
+            },
+            "client": [
+              {
+                "client_info": {
+                  "mobilesdk_app_id": "1:123456789012:android:abcdef123456",
+                  "android_client_info": {
+                    "package_name": "com.example.klik_app"
+                  }
+                }
+              }
+            ]
+          }
+          EOF
 
-      # 8. Automatic APK Generation (Release Mode)
+      # 8. Clean Gradle Server Cache (Corrupt metadata saaf karne ke liye)
+      - name: Purge & Clean Gradle Build Cache
+        run: |
+          cd android
+          ./gradlew clean
+          cd ..
+
+      # 9. Automatic APK Generation (Release Mode) with Detailed Logging
       - name: Build Android APK
         run: flutter build apk --release --verbose
 
-      # 9. Bani hui APK ko GitHub Actions tab par download ke liye attach karna
+      # 10. Bani hui APK ko GitHub Actions tab par download ke liye attach karna
       - name: Upload Generated APK Artifact
         uses: actions/upload-artifact@v4
         with:
           name: klik-release-apk
           path: build/app/outputs/flutter-apk/app-release.apk
+
