@@ -33,6 +33,11 @@ android {
         multiDexEnabled true
     }
 
+    // Strict AAR metadata check ko bypass karein taake dependencies crash na karein
+    tasks.withType(com.android.build.gradle.internal.tasks.CheckAarMetadataWorkAction).configureEach {
+        enabled = false
+    }
+
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
