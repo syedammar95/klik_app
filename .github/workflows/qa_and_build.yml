@@ -50,7 +50,7 @@ jobs:
 
       # 8. Automatic APK Generation (Release Mode)
       - name: Build Android APK
-        run: flutter build apk --release
+        run: flutter build apk --release --verbose
 
       # 9. Bani hui APK ko GitHub Actions tab par download ke liye attach karna
       - name: Upload Generated APK Artifact
